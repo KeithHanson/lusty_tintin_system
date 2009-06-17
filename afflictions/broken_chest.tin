@@ -1,0 +1,60 @@
+#CLASS broken_chest OPEN
+
+#SUBSTITUTE {snaps a kick at you and slams a heel into your chest, snapping ribs.}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+
+#ACTION {snaps a kick at you and slams a heel into your chest, snapping ribs.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {slams painfully into your chest, and you cry out as a rib snaps.}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+#ACTION {slams painfully into your chest, and you cry out as a rib snaps.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {Your ribcage shatters violently under the relentless assault, collapsing your chest and piercing your skin with jagged fragments of broken bone.}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+#ACTION {Your ribcage shatters violently under the relentless assault, collapsing your chest and piercing your skin with jagged fragments of broken bone.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {Your sternum is smashed with a bone-chilling crunch.}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+#ACTION {Your sternum is smashed with a bone-chilling crunch.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {swiftly stomps on your chest, causing you to wince.}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+#ACTION {swiftly stomps on your chest, causing you to wince.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {You grimace in pain as your ribs are hit viciously.}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+#ACTION {You grimace in pain as your ribs are hit viciously.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {hits into your chest and you feel a rib snap like a twig}  { [<059>AFFLICTION:<088>] <019>BROKEN CHEST - APPLY ARNICA TO CHEST }  {5}
+#ACTION {hits into your chest and you feel a rib snap like a twig}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
+}
+{5}
+
+#SUBSTITUTE {You can breathe easier as your ribs snap into place.} {[<029>CURED:<088>] <019>BROKEN CHEST}
+#ACTION {You can breathe easier as your ribs snap into place.}
+{
+   #variable tmp_results {   @remove_affliction{BROKEN CHEST} }
+}
+{5}
+
+#CLASS broken_chest CLOSE

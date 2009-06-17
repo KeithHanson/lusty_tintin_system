@@ -1,0 +1,25 @@
+#CLASS entangled OPEN
+
+#SUBSTITUTE {%*at you and vines shoot forth, entangling you with a thorny embrace.}  { [<059>AFFLICTION:<088>] <019>ENTANGLED - WRITHE }  {5}
+
+#ACTION {%*at you and vines shoot forth, entangling you with a thorny embrace.}
+{
+   #variable tmp_results { @insert_affliction{ENTANGLED} }
+}
+{5}
+
+#SUBSTITUTE {You have writhed free of your entanglement.} {[<029>CURED:<088>] <019>ENTANGLED}
+#ACTION {You have writhed free of your entanglement.}
+{
+   #variable tmp_results { @remove_affliction{ENTANGLED} }
+}
+{5}
+
+#SUBSTITUTE {entangling you in their grasp.}  { [<059>AFFLICTION:<088>] <029>ENTANGLE - WRITHE }  {5}
+#ACTION {entangling you in their grasp.}
+{
+   #variable tmp_results { @insert_affliction{ENTANGLED} }
+}
+{5}
+
+#CLASS entangled CLOSE

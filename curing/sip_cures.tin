@@ -1,0 +1,66 @@
+#CLASS sip_cures OPEN
+
+#VAR sip_cures
+{
+   {NONE}
+   {NONE}
+   {sip phlegmatic}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {sip frost}
+   {sip fire}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {sip antidote}
+   {NONE}
+   {NONE}
+   {NONE}
+   {sip choleric}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {sip phlegmatic}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+}
+
+#CLASS sip_cures CLOSE

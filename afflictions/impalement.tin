@@ -1,0 +1,39 @@
+#CLASS impalement OPEN
+
+#SUBSTITUTE {%1 and you are impaled viciously %2}  { [<059>AFFLICTION:<088>] <019>IMPALED! - WRITHE }  {5}
+
+#ACTION {%1 and you are impaled viciously %2}
+{
+   #variable tmp_results {  @insert_affliction{IMPALED!} }
+}
+{5}
+
+#SUBSTITUTE {You are impaled and must writhe off before you may do that.}  { [<059>AFFLICTION:<088>] <019>IMPALED! - WRITHE }  {5}
+#ACTION {You are impaled and must writhe off before you may do that.}
+{
+   #variable tmp_results {  @insert_affliction{IMPALED!} }
+}
+{5}
+
+#SUBSTITUTE {Your health continues to drain away as your impaled body shudders on the end of %1}  { [<059>AFFLICTION:<088>] <019>IMPALED! - WRITHE }  {5}
+#ACTION {Your health continues to drain away as your impaled body shudders on the end of %1}
+{
+   #variable tmp_results {  @insert_affliction{IMPALED!} }
+}
+{5}
+
+#SUBSTITUTE {With an heroic effort you manage to writhe yourself free from that which impaled you.} {[<029>CURED:<088>] <019>IMPALED!}
+#ACTION {With an heroic effort you manage to writhe yourself free from that which impaled you.}
+{
+   #variable tmp_results {   @remove_affliction{IMPALED!} }
+}
+{5}
+
+#SUBSTITUTE {%1 gives %2 weapon a vicious twist and withdraws it from your body in%3} {[<029>CURED:<088>] <019>IMPALED!}
+#ACTION {%1 gives %2 weapon a vicious twist and withdraws it from your body in%3}
+{
+   #variable tmp_results {   @remove_affliction{IMPALED!} }
+}
+{5}
+
+#CLASS impalement CLOSE

@@ -1,0 +1,18 @@
+#CLASS addiction OPEN
+
+#SUBSTITUTE {You feel a terrible thirst for elixirs grow within you.}  { [<059>AFFLICTION:<088>] <039>ADDICTION - EAT GALINGALE OR FM }  {5}
+#ACTION {You feel a terrible thirst for elixirs grow within you.}
+{
+	#variable tmp_results {  @insert_affliction{ADDICTION} }
+}
+{5}
+
+#SUBSTITUTE {Your terrible addiction to lovely elixirs seems to wane.} {[<029>CURED:<088>] <039>ADDICTION}
+
+#ACTION {Your terrible addiction to lovely elixirs seems to wane.}
+{
+	#variable tmp_results {   @remove_affliction{ADDICTION} }
+}
+{5}
+
+#CLASS addiction CLOSE

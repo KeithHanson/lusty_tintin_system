@@ -1,0 +1,34 @@
+#CLASS blindness OPEN
+
+#SUBSTITUTE {You blink for a moment, then instantly, all about you is darkness.}  { [<059>AFFLICTION:<088>] <049>BLIND - EAT MYRTLE, FAELEAF, OR APPLY HEALTH TO HEAD }  {5}
+
+#ACTION {You blink for a moment, then instantly, all about you is darkness.}
+{
+   #variable tmp_results {  @insert_affliction{BLIND} }
+}
+{5}
+
+#SUBSTITUTE {You are blind and see nothing but darkness.}  { [<059>AFFLICTION:<088>] <049>BLIND - EAT MYRTLE, FAELEAF, OR APPLY HEALTH TO HEAD }  {5}
+#ACTION {You are blind and see nothing but darkness.}
+{
+   #variable tmp_results { @insert_affliction{BLIND} }
+}
+{5}
+
+#SUBSTITUTE {Blessed sight returns to you.} {[<029>CURED:<088>] <049>BLIND}
+#ACTION {Blessed sight returns to you.}
+{
+   #variable tmp_results {   @remove_affliction{BLIND} }
+}
+{5}
+
+#SUBSTITUTE {spits a black mist into your eyes.}  { [<059>AFFLICTION:<088>] <049>BLIND - EAT MYRTLE, FAELEAF, OR APPLY HEALTH TO HEAD }  {5}
+#ACTION {spits a black mist into your eyes.}
+{
+   #variable tmp_results {  @insert_affliction{BLIND} }
+}
+{5}
+
+
+
+#CLASS blindness CLOSE

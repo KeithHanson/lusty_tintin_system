@@ -1,0 +1,60 @@
+#CLASS combat_aliases OPEN
+
+#ALIAS {ama}
+{
+	apply mending to arms
+}
+
+#ALIAS {aml}
+{
+	apply mending to legs
+}
+
+#ALIAS {ch}
+{
+	chant puella %1
+}
+
+#ALIAS {con}
+{
+	concentrate
+}
+
+#ALIAS {cs}
+{
+	combatstyle
+}
+
+#ALIAS {fb}
+{
+	focus body
+}
+
+#ALIAS {rz}
+{
+	raze $target
+}
+
+#ALIAS {sf}
+{
+	sip fire
+}
+
+#ALIAS {sfr}
+{
+	sip frost
+}
+
+#ALIAS {sh}
+{
+	sip health
+}
+
+#ALIAS {sm}
+{
+	sip mana
+}
+
+
+
+#CLASS combat_aliases CLOSE

@@ -1,0 +1,74 @@
+#CLASS asthma OPEN
+
+#SUBSTITUTE {Small motes of yellow pollen rise up from the wildflowers around you and drift into your mouth.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+
+#ACTION {Small motes of yellow pollen rise up from the wildflowers around you and drift into your mouth.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {Small motes of yellow pollen rise up from the wildflowers around you and drift into your mouth.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {Small motes of yellow pollen rise up from the wildflowers around you and drift into your mouth.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {You feel a tightening sensation grow in your lungs.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You feel a tightening sensation grow in your lungs.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {Your lungs are much too constricted to smoke.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {Your lungs are much too constricted to smoke.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {You are breathing lightly.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You are breathing lightly.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {You are panting softly.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You are panting softly.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {You are breathing heavily.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You are breathing heavily.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {You are panting heavily.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You are panting heavily.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {You are gasping for breath.}  { [<059>AFFLICTION:<088>] <019>ASTHMA - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You are gasping for breath.}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA} }
+}
+{5}
+
+#SUBSTITUTE {Your bronchial tubes open up and your asthma is cured.} {[<029>CURED:<088>] <019>ASTHMA}
+#ACTION {Food is no longer repulsive to you.}
+{
+   #variable tmp_results {   @remove_affliction{ASTHMA} }
+}
+{5}
+
+#CLASS asthma CLOSE

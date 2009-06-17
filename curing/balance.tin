@@ -1,0 +1,51 @@
+#CLASS balance OPEN
+
+#VAR herb_balance {1}
+#VAR sip_cure_balance {1}
+#VAR health_potion_balance {1}
+#VAR left_arm_balance {1}
+#VAR right_arm_balance {1}
+#VAR legs_balance {1}
+#VAR eq_balance {1}
+#VAR apply_balance {1}
+
+#ALIAS reset_balances 
+{
+   #VAR herb_balance {1};
+   #VAR sip_cure_balance {1};
+   #VAR health_potion_balance {1};
+   #VAR left_arm_balance {1};
+   #VAR right_arm_balance {1};
+   #VAR legs_balance {1};
+   #VAR eq_balance {1};
+   #VAR apply_balance {1};
+}
+
+#ALIAS show_balances
+{
+   #SHOWME {---- BALANCES ----};
+   #SHOWME {herb_balance: $herb_balance};
+   #SHOWME {sip_cure_balance: $sip_cure_balance};
+   #SHOWME {health_potion_balance: $health_potion_balance};
+   #SHOWME {left_arm_balance: $left_arm_balance};
+   #SHOWME {right_arm_balance: $right_arm_balance};
+   #SHOWME {legs_balance: $legs_balance};
+   #SHOWME {eq_balance: $eq_balance};
+   #SHOWME {apply_balance: $apply_balance};
+}
+
+#ACTION {You may eat or smoke another herb.} {#VAR herb_balance {1};}
+#ACTION {You may drink another purgative or curing potion.} {#VAR sip_cure_balance {1};}
+#ACTION {You may drink another health, mana, or bromide potion.} {#VAR health_potion_balance {1};}
+#ACTION {You have recovered balance on all limbs.} {#VAR left_arm_balance {1};#VAR right_arm_balance {1};#VAR legs_balance {1}}
+#ACTION {You have recovered balance on your left arm.} {#VAR left_arm_balance {1}}
+#ACTION {You have recovered balance on your right arm.} {#VAR right_arm_balance {1}}
+#ACTION {You have recovered balance on your legs.} {#VAR legs_balance {1}}
+#ACTION {You have recovered equilibrium.} {#VAR eq_balance {1}}
+#ACTION {You may apply another salve to yourself.} {#VAR apply_balance {1}}
+
+
+#ACTION {The potion heals and soothes you.} {#VAR health_potion_balance {0}}
+#ACTION {Your mind feels stronger and more alert.} {#VAR health_potion_balance {0}}
+
+#CLASS balance CLOSE

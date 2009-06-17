@@ -1,0 +1,65 @@
+#CLASS anorexia OPEN
+
+#SUBSTITUTE {%1 flings a cobalt blue disc at you, which envelops you in a field of crackling energy.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+
+#ACTION {%1 flings a cobalt blue disc at you, which envelops you in a field of crackling energy.}
+{
+	#variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {The idea of putting something in your stomach sickens you.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+#ACTION {The idea of putting something in your stomach sickens you.}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {The thought of eating sickens you.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+
+#ACTION {The thought of eating sickens you.}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {The thought of food revolts you all of a sudden.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+
+#ACTION {The thought of food revolts you all of a sudden.}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {You feel suddenly as if food is the most repulsive thing you can imagine.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+
+#ACTION {You feel suddenly as if food is the most repulsive thing you can imagine.}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {You lose all desire to eat upon gazing at a loshre rune.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+
+#ACTION {You lose all desire to eat upon gazing at a loshre rune.}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {vomits forth a stream of noxious fluid that strikes you, coating you with a thick green slime.}  { [<059>AFFLICTION:<088>] <019>ANOREXIA - SMOKE COLTSFOOT OR FM }  {5}
+
+#ACTION {vomits forth a stream of noxious fluid that strikes you, coating you with a thick green slime.}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA} }
+}
+{5}
+
+#SUBSTITUTE {Food is no longer repulsive to you.} {[<029>CURED:<088>] <019>ANOREXIA}
+#ACTION {Food is no longer repulsive to you.}
+{
+	#variable tmp_results {   @remove_affliction{ANOREXIA} }
+}
+{5}
+
+#CLASS anorexia CLOSE

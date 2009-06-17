@@ -1,0 +1,25 @@
+#CLASS manabarbs OPEN
+
+#SUBSTITUTE {Your head begins throbbing to the beat of the ominous noise.}  { [<059>AFFLICTION:<088>] <049>MANABARBS - EAT HOREHOUND }  {5}
+
+#ACTION {Your head begins throbbing to the beat of the ominous noise.}
+{
+   #variable tmp_results {  @insert_affliction{MANABARBS} }
+}
+{5}
+
+#SUBSTITUTE {You hear an ominous sound, and a dull pain stab throbs throughout your head.}  { [<059>AFFLICTION:<088>] <049>MANABARBS - EAT HOREHOUND }  {5}
+#ACTION {You hear an ominous sound, and a dull pain stab throbs throughout your head.}
+{
+   #variable tmp_results {  @insert_affliction{MANABARBS} }
+}
+{5}
+
+#SUBSTITUTE {An ominous noise lifts from within your mind.} {[<029>CURED:<088>] <049>MANABARBS}
+#ACTION {An ominous noise lifts from within your mind.}
+{
+   #variable tmp_results {   @remove_affliction{MANABARBS} }
+}
+{5}
+
+#CLASS manabarbs CLOSE

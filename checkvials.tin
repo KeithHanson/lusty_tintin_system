@@ -1,0 +1,23 @@
+#CLASS {checkvials} OPEN
+
+#ACTION {"vial%1"}
+{
+	#list vial_list ins 1 {vial%1};
+	#list vial_list len vial_list_length
+}
+{5}
+
+#ALIAS {clear_vials}
+{
+	#list vial_list clr
+}
+
+#ALIAS {look_in_vials}
+{
+	#loop {1 $vial_list_length} {#DELAY {&0} {#showme {Looking in: $vial_list[&0]};look in $vial_list[&0]; } }
+}
+
+#VARIABLE         {vial_list}             {{vial176443}{vial195076}{vial139965}{vial116124}{vial199866}{vial147894}{vial203675}{vial203465}{vial203345}{vial199541}{vial195070}{vial82606}{vial42299}{vial193024}{vial15082}{vial176932}{vial194794}{vial194198}{vial173786}{vial196283}{vial200062}{vial112347}}
+#VARIABLE         {vial_list_length}      {22}
+
+#CLASS {checkvials} CLOSE

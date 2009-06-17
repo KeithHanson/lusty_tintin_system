@@ -1,0 +1,18 @@
+#CLASS combat_substitutions OPEN
+#VAR enemy_shield 0
+#ALIAS reset_shield {#var enemy_shield 0}
+#SUBSTITUTE       {%*cobalt blue pentagram in the air%*}  {<039> *** SHIELD ***}       {5}
+#ACTION           {%*cobalt blue pentagram in the air%*} {#VAR enemy_shield 1}
+#ACTION           {You raze %*} {#VAR enemy_shield 0}
+#ACTION           {You whip a molten-steel dreadlord hammer through the air%*} {#VAR enemy_shield 0}
+#ACTION           {A dizzying beam of energy strikes you as your attack rebounds%*} {#VAR enemy_shield 1}
+#SUBSTITUTE       {You suddenly perceive the vague outline of an aura of rebounding around%*} {<039> *** SHIELD ***}
+#ACTION           {You suddenly perceive the vague outline of an aura of rebounding around%*} {#VAR enemy_shield 1}
+#SUBSTITUTE       {You have recovered balance on all limbs.}  { <049> *** BALANCE *** }    {5}
+#SUBSTITUTE       {You have recovered balance on your left arm.}  {<049> *** LEFT ***}         {5}
+#SUBSTITUTE       {You have recovered balance on your right arm.}  {<049> *** RIGHT ***}        {5}
+#SUBSTITUTE       {You may drink another health, mana, or bromide potion.}  { <019> *** POTION *** }     {5}
+
+#GAG {%*loti spores%*}
+
+#CLASS combat_substitutions CLOSE

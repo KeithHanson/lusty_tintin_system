@@ -1,0 +1,66 @@
+#CLASS herbal_cures OPEN
+
+#VAR herbal_cures 
+{
+   {eat_horehound}
+   {eat_galingale}
+   {NONE}
+   {eat_wormwood}
+   {NONE}
+   {NONE}
+   {NONE}
+   {eat_myrtle}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {eat_wormwood}
+   {eat_kombu}
+   {NONE}
+   {NONE}
+   {NONE}
+   {eat_kafe}
+   {eat_pennyroyal}
+   {eat_kombu}
+   {NONE}
+   {NONE}
+   {eat_kombu}
+   {eat_pennyroyal}
+   {eat_yarrow}
+   {NONE}
+   {NONE}
+   {eat_reishi}
+   {eat_horehound}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {eat_horehound}
+   {eat_myrtle}
+   {eat_yarrow}
+   {eat_yarrow}
+   {eat_yarrow}
+   {eat_yarrow}
+   {NONE}
+   {eat_calamus}
+   {eat_pennyroyal}
+   {NONE}
+   {eat_wormwood}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {eat_yarrow}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {eat_pennyroyal}
+   {eat_kombu}
+   {NONE}
+   {NONE}
+}
+
+#CLASS herbal_cures CLOSE

@@ -1,0 +1,14 @@
+#CLASS curing OPEN
+
+#CLASS cure_aliases read curing/cure_aliases.tin
+#CLASS balance read curing/balance.tin
+#CLASS afflictions_list read curing/afflictions_list.tin
+#CLASS apply_cures read curing/apply_cures.tin
+#CLASS herbal_cures read curing/herbal_cures.tin
+#CLASS pipe_cures read curing/pipe_cures.tin
+#CLASS pipe_lists read curing/pipe_lists.tin
+#CLASS sip_cures read curing/sip_cures.tin
+#CLASS special_cures read curing/special_cures.tin
+#CLASS auto_curing read curing/auto_curing.tin
+
+#CLASS curing CLOSE

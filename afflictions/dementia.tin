@@ -1,0 +1,32 @@
+#CLASS dementia OPEN
+
+#SUBSTITUTE {You look about yourself, frenzied and wild-eyed.}  { [<059>AFFLICTION:<088>] <069>DEMENTIA - EAT PENNYROYAL }  {5}
+
+#ACTION {You look about yourself, frenzied and wild-eyed.}
+{
+   #variable tmp_results {  @insert_affliction{DEMENTIA} }
+}
+{5}
+
+#SUBSTITUTE {As the cawing sound of the music pierces into your mind\, visions out of your deepest nightmares rise up to plague you. Something deep within you snaps, and you find yourself unable to do anything but gibber madly.}  { [<059>AFFLICTION:<088>] <069>DEMENTIA - EAT PENNYROYAL }  {5}
+#ACTION {As the cawing sound of the music pierces into your mind\, visions out of your deepest nightmares rise up to plague you. Something deep within you snaps, and you find yourself unable to do anything but gibber madly.}
+{
+   #variable tmp_results {  @insert_affliction{DEMENTIA} }
+}
+{5}
+
+#SUBSTITUTE {Strange noises can be heard behind you and you see movement out of the corner of your eye. What's that? There it is again!}  { [<059>AFFLICTION:<088>] <069>DEMENTIA - EAT PENNYROYAL }  {5}
+#ACTION {Strange noises can be heard behind you and you see movement out of the corner of your eye. What's that? There it is again!}
+{
+   #variable tmp_results {  @insert_affliction{DEMENTIA} }
+}
+{5}
+
+#SUBSTITUTE {Sanity returns to you and you are no longer demented.} {[<029>CURED:<088>] <069>DEMENTIA}
+#ACTION {Sanity returns to you and you are no longer demented.}
+{
+   #variable tmp_results {   @remove_affliction{DEMENTIA} }
+}
+{5}
+
+#CLASS dementia CLOSE

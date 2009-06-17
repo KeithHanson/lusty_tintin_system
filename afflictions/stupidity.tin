@@ -1,0 +1,25 @@
+#CLASS stupidity OPEN
+
+#SUBSTITUTE {Hmmmm. Why must everything be so difficult to figure out?}  { [<059>AFFLICTION:<088>] <019>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
+
+#ACTION {Hmmmm. Why must everything be so difficult to figure out?}
+{
+   #variable tmp_results {  @insert_affliction{STUPIDITY} }
+}
+{5}
+
+#SUBSTITUTE {You flip the bird.}  { [<059>AFFLICTION:<088>] <059>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
+#ACTION {You flip the bird.}
+{
+   #variable tmp_results { @insert_affliction{STUPIDITY} }
+}
+{5}
+
+#SUBSTITUTE {You aren't such a complete idiot anymore.} {[<029>CURED:<088>] <019>STUPIDITY}
+#ACTION {You aren't such a complete idiot anymore.}
+{
+   #variable tmp_results {   @remove_affliction{STUPIDITY} }
+}
+{5}
+
+#CLASS stupidity CLOSE

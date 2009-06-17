@@ -1,0 +1,70 @@
+#CLASS {basic_aliases} OPEN
+
+#ALIAS {check_hammers}
+{
+	wp hammer20575;
+	wp hammer13126
+}
+
+#ALIAS {checkvials}
+{
+	#class checkvials read checkvials.tin;
+	clear_vials;
+	ii vial;
+	more;
+	look_in_vials
+}
+
+#ALIAS {clam}
+{
+	get clam;
+	put clam in pack
+}
+
+#ALIAS {gg}
+{
+	get $target
+}
+
+#ALIAS {ggg}
+{
+	gg;
+	gg;
+	gg
+}
+
+#ALIAS {jj}
+{
+	jab $target
+}
+
+#ALIAS {pss}
+{
+	portal search shops %1
+}
+
+#ALIAS {save_classes}
+{
+	#class substitutions write substitutions.tin;
+	#class macros write macros.tin;
+	#class basic_actions write basic_actions.tin;
+	#class basic_aliases write basic_aliases.tin;
+}
+
+#ALIAS {ss}
+{
+	swing $target
+}
+
+#ALIAS {tt}
+{
+	#variable target %0;
+	#echo {TARGET SET TO: <019>%s<088>} {$target};
+	sqt Target set to: $target
+}
+
+#ALIAS {relaff} {#CLASS afflictions KILL;#CLASS afflictions READ afflictions.tin}
+
+#ALIAS {defup} {#VAR defense_queue_position 1;#VAR tmp_results @next_defense{};}
+
+#CLASS {basic_aliases} CLOSE

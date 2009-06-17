@@ -1,0 +1,32 @@
+#CLASS pierced_arms OPEN
+
+#SUBSTITUTE {%1 your right arm, and blood fountains out%2}  { [<059>AFFLICTION:<088>] <069>PIERCED RARM - SMOKE MYRTLE }  {5}
+
+#ACTION {%1 your right arm, and blood fountains out%2}
+{
+   #variable tmp_results {  @insert_affliction{PIERCED RARM} }
+}
+{5}
+
+#SUBSTITUTE {%1 your left arm, and blood fountains out%2}  { [<059>AFFLICTION:<088>] <069>PIERCED LARM - SMOKE MYRTLE }  {5}
+#ACTION {%1 your left arm, and blood fountains out%2}
+{
+   #variable tmp_results {  @insert_affliction{PIERCED LARM} }
+}
+{5}
+
+#SUBSTITUTE {The hole impaling your left arm muscles closes.} {[<029>CURED:<088>] <069>PIERCED LARM}
+#ACTION {The hole impaling your left arm muscles closes.}
+{
+   #variable tmp_results {   @remove_affliction{PIERCED LARM} }
+}
+{5}
+
+#SUBSTITUTE {The hole impaling your right arm muscles closes.} {[<029>CURED:<088>] <069>PIERCED RARM}
+#ACTION {The hole impaling your left arm muscles closes.}
+{
+   #variable tmp_results {   @remove_affliction{PIERCED RARM} }
+}
+{5}
+
+#CLASS pierced_arms CLOSE

@@ -1,0 +1,25 @@
+#CLASS reckless OPEN
+
+#SUBSTITUTE {None may stand in your way! You are invincible!}  { [<059>AFFLICTION:<088>] <019>RECKLESS - EAT HOREHOUND }  {5}
+
+#ACTION {None may stand in your way! You are invincible!}
+{
+   #variable tmp_results {  @insert_affliction{RECKLESS} }
+}
+{5}
+
+#SUBSTITUTE {You realize that your heroic actions can no longer continue unnoticed, and you take it upon yourself to rectify the situation.}  { [<059>AFFLICTION:<088>] <019>RECKLESS - EAT HOREHOUND }  {5}
+#ACTION {You realize that your heroic actions can no longer continue unnoticed, and you take it upon yourself to rectify the situation.}
+{
+   #variable tmp_results {  @insert_affliction{RECKLESS} }
+}
+{5}
+
+#SUBSTITUTE {Prudence rules your psyche once again.} {[<029>CURED:<088>] <019>RECKLESS}
+#ACTION {Prudence rules your psyche once again.}
+{
+   #variable tmp_results {   @remove_affliction{RECKLESS} }
+}
+{5}
+
+#CLASS reckless CLOSE

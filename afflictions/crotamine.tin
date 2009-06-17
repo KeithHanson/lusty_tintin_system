@@ -1,0 +1,53 @@
+#CLASS crotamine OPEN
+
+#SUBSTITUTE {You begin feeling slightly flushed.}  { [<059>AFFLICTION:<088>] <019>CROTAMINE - SIP ANTIDOTE }  {5}
+
+#ACTION {You begin feeling slightly flushed.}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE} }
+}
+{5}
+
+#SUBSTITUTE {Blood begins to slowly drip from your nose.}  { [<059>AFFLICTION:<088>] <019>CROTAMINE - SIP ANTIDOTE }  {5}
+#ACTION {Blood begins to slowly drip from your nose.}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE} }
+}
+{5}
+
+#SUBSTITUTE {Your legs tremble slightly as a yellow jaundice begins to creep%1}  { [<059>AFFLICTION:<088>] <019>CROTAMINE - SIP ANTIDOTE }  {5}
+#ACTION {Your legs tremble slightly as a yellow jaundice begins to creep%1}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE} }
+}
+{5}
+
+#SUBSTITUTE {You cough suddenly, expelling black fluid with bits of what looks to be tissue suspended in it.}  { [<059>AFFLICTION:<088>] <019>CROTAMINE - SIP ANTIDOTE }  {5}
+#ACTION {You cough suddenly, expelling black fluid with bits of what looks to be tissue suspended in it.}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE} }
+}
+{5}
+
+#SUBSTITUTE {affliction text here}  { [<059>AFFLICTION:<088>] <019>CROTAMINE - SIP ANTIDOTE }  {5}
+#ACTION {affliction text here}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE} }
+}
+{5}
+
+#SUBSTITUTE {affliction text here}  { [<059>AFFLICTION:<088>] <019>CROTAMINE - SIP ANTIDOTE }  {5}
+#ACTION {affliction text here}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE} }
+}
+{5}
+
+#SUBSTITUTE {The potion burns through your veins, destroying the deadly poisons that are killing you.} {[<029>CURED:<088>] <019>CROTAMINE}
+#ACTION {The potion burns through your veins, destroying the deadly poisons that are killing you.}
+{
+   #variable tmp_results {   @remove_affliction{CROTAMINE} }
+}
+{5}
+
+#CLASS crotamine CLOSE

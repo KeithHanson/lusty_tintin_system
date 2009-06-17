@@ -1,0 +1,81 @@
+#CLASS {afflictions} OPEN
+
+#ALIAS {aff}
+{
+	#showme {<069>Listing Afflictions};
+	#showme {-------------------};
+	#list {afflictions} {len} {aff_list_len};
+	#loop {1 $aff_list_len}{#SHOWME {$afflictions[&0]}}
+}
+
+#FUNCTION {insert_affliction}
+{
+	#list {afflictions} {fnd} {%0} {aff_tmp_idx};
+	#if {$aff_tmp_idx == 0}
+	{
+		#list {afflictions} {ins} {1} {%0};
+		#variable tmp_results {@cure_next{$afflictions[1]}}
+	}
+	{
+		#unvariable {aff_tmp_idx};
+		#VAR {result} {affliction inserted}
+	}
+}
+
+#FUNCTION {remove_affliction}
+{
+	#list {afflictions} {fnd} {%0} {aff_tmp_idx};
+	#if {$aff_tmp_idx != 0}
+	{
+		#list {afflictions} {del} {$aff_tmp_idx};
+		#variable tmp_results {@cure_next{$afflictions[1]}};
+	}
+	{
+		#unvariable {aff_tmp_idx};
+		#VAR {result} {affliction removed}
+	}
+}
+
+#CLASS achromatic_aura read afflictions/achromatic_aura.tin
+#CLASS addiction read afflictions/addiction.tin
+#CLASS aeon read afflictions/aeon.tin
+#CLASS agoraphobia read afflictions/agoraphobia.tin
+#CLASS anorexia read afflictions/anorexia.tin
+#CLASS asthma read afflictions/asthma.tin
+#CLASS attraction read afflictions/attraction.tin
+#CLASS black_lung read afflictions/black_lung.tin
+#CLASS burning read afflictions/burning.tin
+#CLASS blindness read afflictions/blindness.tin
+#CLASS broken_chest read afflictions/broken_chest.tin
+#CLASS broken_jaw read afflictions/broken_jaw.tin
+#CLASS burning read afflictions/burning.tin
+#CLASS chills read afflictions/chills.tin
+#CLASS clamped_animal read afflictions/clamped_animal.tin
+#CLASS claustrophobia read afflictions/claustrophobia.tin
+#CLASS clumsiness read afflictions/clumsiness.tin
+#CLASS crippled_arms read afflictions/crippled_arms.tin
+#CLASS crippled_legs read afflictions/crippled_legs.tin
+#CLASS daydreaming read afflictions/daydreaming.tin
+#CLASS dementia read afflictions/dementia.tin
+#CLASS dizziness read afflictions/dizziness.tin
+#CLASS dysentery read afflictions/dysentery.tin
+#CLASS epilepsy read afflictions/epilepsy.tin
+#CLASS hallucinations read afflictions/hallucinations.tin
+#CLASS hemophilia read afflictions/hemophilia.tin
+#CLASS impalement read afflictions/impalement.tin
+#CLASS impatience read afflictions/impatience.tin
+#CLASS manabarbs read afflictions/manabarbs.tin
+#CLASS paralysis read afflictions/paralysis.tin
+#CLASS pierced_arms read afflictions/pierced_arms.tin
+#CLASS reckless read afflictions/reckless.tin
+#CLASS sensitivity read afflictions/sensitivity.tin
+#CLASS severed_artery read afflictions/severed_artery.tin
+#CLASS shyness read afflictions/shyness.tin
+#CLASS stupidity read afflictions/stupidity.tin
+#CLASS sun_allergy read afflictions/sun_allergy.tin
+#CLASS vestiphobia read afflictions/vestiphobia.tin
+#CLASS crotamine read afflictions/crotamine.tin
+#CLASS slickness read afflictions/slickness.tin
+#CLASS prone read afflictions/prone.tin
+#CLASS entangled read afflictions/entangled.tin
+#CLASS {afflictions} CLOSE

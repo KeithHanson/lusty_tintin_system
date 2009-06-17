@@ -1,0 +1,18 @@
+#CLASS hemophilia OPEN
+
+#SUBSTITUTE {You feel light headed and dizzy.}  { [<059>AFFLICTION:<088>] <019>HEMOPHILIA - EAT YARROW }  {5}
+
+#ACTION {You feel light headed and dizzy.}
+{
+   #variable tmp_results {  @insert_affliction{HEMOPHILIA} }
+}
+{5}
+
+#SUBSTITUTE {You feel your blood thickening.} {[<029>CURED:<088>] <019>HEMOPHILIA}
+#ACTION {You feel your blood thickening.}
+{
+   #variable tmp_results {   @remove_affliction{HEMOPHILIA} }
+}
+{5}
+
+#CLASS hemophilia CLOSE

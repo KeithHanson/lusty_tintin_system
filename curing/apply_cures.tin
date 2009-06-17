@@ -1,0 +1,66 @@
+#CLASS apply_cures OPEN
+
+#VAR apply_cures
+{
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {apply melancholic to chest}
+   {apply melancholic to chest}
+   {apply health to head}
+   {apply arnica to chest}
+   {apply mending to head}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {apply mending to arms}
+   {apply mending to arms}
+   {NONE}
+   {NONE}
+   {NONE}
+   {apply melancholic to head}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {apply melancholic to head}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {apply liniment}
+   {NONE}
+   {apply regeneration to lleg}
+   {apply regeneration to rleg}
+   {apply regeneration to rarm}
+   {apply regeneration to larm}
+   {NONE}
+   {apply arnica to head}
+   {apply mending to arms}
+   {apply mending to arms}
+   {apply regeneration to gut}
+   {NONE}
+   {NONE}
+   {apply mending to arms}
+   {apply mending to legs}
+}
+
+#CLASS apply_cures CLOSE

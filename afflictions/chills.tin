@@ -1,0 +1,46 @@
+#CLASS chills OPEN
+
+#SUBSTITUTE {raises a hand towards you and blasts you with cold, frigid air.}  { [<059>AFFLICTION:<088>] <049>CHILLS - SIP FIRE }  {5}
+
+#ACTION {raises a hand towards you and blasts you with cold, frigid air.}
+{
+   #variable tmp_results {  @insert_affliction{CHILLS} }
+}
+{5}
+
+#SUBSTITUTE {You are frozen in terror as a shadowy garshade opens its maw horrifically%*}  { [<059>AFFLICTION:<088>] <049>CHILLS - SIP FIRE }  {5}
+#ACTION {You are frozen in terror as a shadowy garshade opens its maw horrifically%*}
+{
+   #variable tmp_results { @insert_affliction{CHILLS} }
+}
+{5}
+
+#SUBSTITUTE {Though still shivering, you are no longer frozen solid.}  { [<059>AFFLICTION:<088>] <049>CHILLS - SIP FIRE }  {5}
+#ACTION {Though still shivering, you are no longer frozen solid.}
+{
+   #variable tmp_results {  @insert_affliction{CHILLS} }
+}
+{5}
+
+#SUBSTITUTE {A feeling of comfortable warmth spreads over you.} {[<029>CURED:<088>] <049>CHILLS}
+#ACTION {A feeling of comfortable warmth spreads over you.}
+{
+   #variable tmp_results {   @remove_affliction{CHILLS} }
+}
+{5}
+
+#SUBSTITUTE {Your body warms up and you stop shivering.} {[<029>CURED:<088>] <049>CHILLS}
+#ACTION {Your body warms up and you stop shivering.}
+{
+   #variable tmp_results {   @remove_affliction{CHILLS} }
+}
+{5}
+
+#SUBSTITUTE {%1 coating your skin with a fine layer of ice.}  { [<059>AFFLICTION:<088>] <049>CHILLS - SIP FIRE }  {5}
+#ACTION {coating your skin with a fine layer of ice.}
+{
+   #variable tmp_results {  @insert_affliction{CHILLS} }
+}
+{5}
+
+#CLASS chills CLOSE

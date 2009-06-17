@@ -1,0 +1,61 @@
+#CLASS auto_curing OPEN
+
+#VAR auto_cure {1}
+#ALIAS auto_cure_off {#VAR auto_cure {0}}
+#ALIAS auto_cure_on {#VAR auto_cure {1}}
+
+#FUNCTION {cure_next}
+{
+   #list {afflictions_list} {fnd} {%0} {cure_tmp_idx};
+   
+   #if {$auto_cure == 1 && $cure_tmp_idx != 0}
+   {
+      #if {"$herbal_cures[$cure_tmp_idx]" != "NONE" && $herb_balance != 0}
+      {
+         $herbal_cures[$cure_tmp_idx];
+         #VAR herb_balance {0};
+         #SHOWME {"SET HERB BALANCE TO OFF"}
+      }
+      {
+         #if {"$pipe_cures[$cure_tmp_idx]" != "NONE" && $herb_balance != 0}
+         {
+            $pipe_cures[$cure_tmp_idx];
+            #VAR herb_balance {0}
+            #SHOWME {"SET HERB BALANCE TO OFF"}
+         }
+         {
+            #if {"$apply_cures[$cure_tmp_idx]" != "NONE" && $apply_balance != 0}
+            {
+               $apply_cures[$cure_tmp_idx];
+               #VAR apply_balance {0}
+               #SHOWME {"SET APPLY BALANCE TO OFF"}
+            }
+            {
+               #if {"$sip_cures[$cure_tmp_idx]" != "NONE" && $sip_cure_balance != 0}
+               {
+                  $sip_cures[$cure_tmp_idx];
+                  #VAR sip_cure_balance {0}
+                  #SHOWME {"SET SIP BALANCE TO OFF"}
+               }
+               {
+                  #if {"$special_cures[$cure_tmp_idx]" != "NONE"}
+                  {
+                     #if {"$special_cures[$cure_tmp_idx]" == "PRONE"}
+                     {
+                        #if {$legs_balance == 1 && $right_arm_balance == 1 && $left_arm_balance == 1}
+                        {
+                           $special_cures[$cure_tmp_idx]
+                        }
+                     }
+                     {
+                        $special_cures[$cure_tmp_idx]
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+#CLASS auto_curing CLOSE

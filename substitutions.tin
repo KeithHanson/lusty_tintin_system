@@ -1,0 +1,8 @@
+#CLASS {substitutions} OPEN
+
+#SUBSTITUTE       {%1 $target %2}         {%1<019> $target <088>%2}    {5}
+#SUBSTITUTE       {Unearthed from the sand, a slippery clam lays nestled in the sand.}  { <019> *** CLAM *** <088> }  {5}
+#SUBSTITUTE       {You down the last drop from a %1 vial.}  {<019> *** EMPTY VIAL ***}   {5}
+#SUBSTITUTE       {beggar}                {<019>***BEGGAR***<088>}     {5}
+
+#CLASS {substitutions} CLOSE

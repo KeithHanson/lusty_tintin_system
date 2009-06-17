@@ -1,0 +1,34 @@
+#CLASS defenses OPEN
+
+#LIST defense_queue clr
+
+#VAR defense_queue 
+{
+   {grip}
+   {vitality}
+   {chant fortuna}
+   {chant draconis}
+   {chant rubeus}
+   {rub ring145490}
+   {rub ring187924}
+   {rub ring162890}
+   {rub ring47387}
+   {breathe deep}
+   {outr kafe;eat kafe}
+   {combatstyle lightning}
+}
+
+#VAR defense_queue_position 1
+
+#FUNCTION {next_defense}
+{
+   $defense_queue[$defense_queue_position];
+   #MATH {defense_queue_position} {$defense_queue_position + 1};
+   #LIST defense_queue len defense_queue_length;
+   #IF {$defense_queue_length <= $defense_queue_position}
+   {
+      #SHOWME {Defenses complete.}
+   }
+}
+
+#CLASS defenses CLOSE

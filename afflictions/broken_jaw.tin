@@ -1,0 +1,53 @@
+#CLASS broken_jaw OPEN
+
+#SUBSTITUTE {%*pain as your jaw is crushed and shatters.}  { [<059>AFFLICTION:<088>] <049>BROKEN JAW - APPLY MENDING TO HEAD }  {5}
+
+#ACTION {pain as your jaw is crushed and shatters.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW} }
+}
+{5}
+
+#SUBSTITUTE {You suffer acute pain as you swallow.}  { [<059>AFFLICTION:<088>] <049>BROKEN JAW - APPLY MENDING TO HEAD }  {5}
+#ACTION {You suffer acute pain as you swallow.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW} }
+}
+{5}
+
+#SUBSTITUTE {You suffer acute pain as you chew.}  { [<059>AFFLICTION:<088>] <049>BROKEN JAW - APPLY MENDING TO HEAD }  {5}
+#ACTION {You suffer acute pain as you chew.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW} }
+}
+{5}
+
+#SUBSTITUTE {The force of the whistling chain shatters your jaw.}  { [<059>AFFLICTION:<088>] <049>BROKEN JAW - APPLY MENDING TO HEAD }  {5}
+#ACTION {The force of the whistling chain shatters your jaw.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW} }
+}
+{5}
+
+#SUBSTITUTE {%*smashes your head with %* shattering your jaw.}  { [<059>AFFLICTION:<088>] <049>BROKEN JAW - APPLY MENDING TO HEAD }  {5}
+#ACTION {smashes your head with %1 shattering your jaw.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW} }
+}
+{5}
+
+#SUBSTITUTE {Your jaw partially realigns into place as the bones there partially heal.}  { [<059>AFFLICTION:<088>] <049>BROKEN JAW - APPLY MENDING TO HEAD }  {5}
+#ACTION {Your jaw partially realigns into place as the bones there partially heal.}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW} }
+}
+{5}
+
+#SUBSTITUTE {Your jaw clicks into place as the bones there heal.} {[<029>CURED:<088>] <049>BROKEN JAW}
+#ACTION {Your jaw clicks into place as the bones there heal.}
+{
+   #variable tmp_results {   @remove_affliction{BROKEN JAW} }
+}
+{5}
+
+#CLASS broken_jaw CLOSE

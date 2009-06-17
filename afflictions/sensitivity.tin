@@ -1,0 +1,18 @@
+#CLASS sensitivity OPEN
+
+#SUBSTITUTE {A prickly, stinging sensation spreads through your body.}  { [<059>AFFLICTION:<088>] <069>SENSITIVITY - EAT MYRTLE OR APPLY MELANCHOLIC TO HEAD }  {5}
+
+#ACTION {A prickly, stinging sensation spreads through your body.}
+{
+   #variable tmp_results {  @insert_affliction{SENSITIVITY} }
+}
+{5}
+
+#SUBSTITUTE {The stinging feeling fades.} {[<029>CURED:<088>] <069>SENSITIVITY}
+#ACTION {The stinging feeling fades.}
+{
+   #variable tmp_results {   @remove_affliction{SENSITIVITY} }
+}
+{5}
+
+#CLASS sensitivity CLOSE

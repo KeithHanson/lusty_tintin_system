@@ -1,0 +1,25 @@
+#CLASS hallucinations OPEN
+
+#SUBSTITUTE {You are stunned by a vision of divine astral beings.}  { [<059>AFFLICTION:<088>] <069>HALLUCINATIONS - EAT PENNYROYAL }  {5}
+
+#ACTION {You are stunned by a vision of divine astral beings.}
+{
+   #variable tmp_results {  @insert_affliction{HALLUCINATIONS} }
+}
+{5}
+
+#SUBSTITUTE {Shadowy shapes rise up around you and form into familiar shapes.}  { [<059>AFFLICTION:<088>] <069>HALLUCINATIONS - EAT PENNYROYAL }  {5}
+#ACTION {Shadowy shapes rise up around you and form into familiar shapes.}
+{
+   #variable tmp_results {  @insert_affliction{HALLUCINATIONS} }
+}
+{5}
+
+#SUBSTITUTE {Your hallucinations cease to plague you.} {[<029>CURED:<088>] <069>HALLUCINATIONS}
+#ACTION {Your hallucinations cease to plague you.}
+{
+   #variable tmp_results {   @remove_affliction{HALLUCINATIONS} }
+}
+{5}
+
+#CLASS hallucinations CLOSE

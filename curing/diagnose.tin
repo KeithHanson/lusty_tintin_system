@@ -1,0 +1,178 @@
+#CLASS diagnose OPEN
+
+#VAR diagnosing {0}
+
+#alias dd 
+{
+   diag
+}
+
+#ACTION {You are:} {#VAR diagnosing {1}}
+
+#ACTION {^ablaze.$}
+{
+   #variable tmp_results {  @insert_affliction{BURNING} }
+}
+
+#ACTION{^afflicted with an achromatic aura.$}
+{
+   #variable tmp_results {  @insert_affliction{ACHROMATIC AURA} }
+}
+
+#ACTION{^addicted to elixirs.$}
+{
+   #variable tmp_results {  @insert_affliction{ADDICTION} }
+}
+
+#ACTION {^afflicted with the curse of the Aeon.$}
+{
+   #variable tmp_results {  @insert_affliction{AEON}
+}
+#ACTION {^agoraphobic.$}
+{
+   #variable tmp_results {  @insert_affliction{AGORAPHOBIA}
+}
+#ACTION {^suffering from amnesia.$}
+{
+   #variable tmp_results {  @insert_affliction{AMNESIA}
+}
+
+#ACTION {^without a left leg.$}
+{
+   #variable tmp_results {  @insert_affliction{AMPUTATED LLEG}
+}
+
+#ACTION {^without a right leg.$}
+{
+   #variable tmp_results {  @insert_affliction{AMPUTATED RLEG}
+}
+
+#ACTION {^without a left arm.$}
+{
+   #variable tmp_results {  @insert_affliction{AMPUTATED LARM}
+}
+
+#ACTION {^without a right arm.$}
+{
+   #variable tmp_results {  @insert_affliction{AMPUTATED RARM}
+}
+
+#ACTION {^anorexic.$}
+{
+   #variable tmp_results {  @insert_affliction{ANOREXIA}
+}
+#ACTION {^afflicted by horrible asthma.$}
+{
+   #variable tmp_results {  @insert_affliction{ASTHMA}
+}
+#ACTION {^coughing up dreadful black phlegm.$}
+{
+   #variable tmp_results {  @insert_affliction{BLACK LUNG}
+}
+#ACTION {^blind.$}
+{
+   #variable tmp_results {  @insert_affliction{BLIND}
+}
+#ACTION {^afflicted with a blood clot in the %*$}
+{
+   #variable tmp_results {  @insert_affliction{BLOOD CLOT}
+}
+#ACTION {^suffering from a broken chest.$}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN CHEST}
+}
+#ACTION {^suffering from a broken jaw.$}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN JAW}
+}
+
+#ACTION {^afflicted by a crippled right leg$}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG}
+}
+
+#ACTION {^afflicted by a crippled left leg$}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG}
+}
+
+#ACTION {^afflicted by a crippled left arm$}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM}
+}
+
+#ACTION {^afflicted by a crippled right arm$}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM}
+}
+
+#ACTION {^suffering a broken nose.$}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN NOSE}
+}
+#ACTION {^suffering a broken left wrist.$}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN LWRIST}
+}
+#ACTION {^suffering a broken right wrist.$}
+{
+   #variable tmp_results {  @insert_affliction{BROKEN RWRIST}
+}
+#ACTION {^suffering from massive organ failure.$}
+{
+   #variable tmp_results {  @insert_affliction{BURST ORGANS}
+}
+#ACTION {^claustrophobic.$}
+{
+   #variable tmp_results {  @insert_affliction{CLAUSTROPHOBIA}
+}
+#ACTION {^afflicted with clumsiness.$}
+{
+   #variable tmp_results {  @insert_affliction{CLUMSINESS}
+}
+#ACTION {^confused.$}
+{
+   #variable tmp_results {  @insert_affliction{CONFUSION}
+}
+#ACTION {^dying from crotamine.$}
+{
+   #variable tmp_results {  @insert_affliction{CROTAMINE}
+}
+#ACTION {^plagued by childish daydreams.$}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING}
+}
+#ACTION {^of a deadened mind.$}
+{
+   #variable tmp_results {  @insert_affliction{DEADENING}
+}
+#ACTION {^demented.$}
+{
+   #variable tmp_results {  @insert_affliction{DEMENTIA} }
+}
+#ACTION {^overcome by dizziness.$}
+{
+   #variable tmp_results {  @insert_affliction{DIZZINESS} }
+}
+#ACTION {^suffering from a bad bout of dysentery.$}
+{
+   #variable tmp_results {  @insert_affliction{DYSENTERY} }
+}
+#ACTION {^entangled.$}
+{
+   #variable tmp_results {  @insert_affliction{ENTANGLED} }
+}
+#ACTION {^suffering from epilepsy.$}
+{
+   #variable tmp_results {  @insert_affliction{EPILEPSY} }
+}
+#ACTION {^afflicted by haemophilia.$}
+{
+   #variable tmp_results {  @insert_affliction{HEMOPHILIA} }
+}
+#ACTION {^hallucinating.$}
+{
+   #variable tmp_results {  @insert_affliction{HALLUCINATIONS} }
+}
+
+#CLASS diagnose CLOSE

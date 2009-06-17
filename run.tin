@@ -1,0 +1,17 @@
+#MACRO {\eOP}
+{
+	#session Lusternia lusternia.com 23;
+	USERNAME;
+	PASSWORD;
+	#CLASS macros read macros.tin;
+   #CLASS substitutions read substitutions.tin;
+   #CLASS combat_substitutions read combat_substitutions.tin;
+   #CLASS basic_actions read basic_actions.tin;
+   #CLASS basic_aliases read basic_aliases.tin;
+   #CLASS combat_aliases read combat_aliases.tin;
+   #CLASS afflictions read afflictions.tin;
+   #CLASS defenses read defenses.tin;
+   #CLASS curing read curing.tin;
+}
+
+#SPLIT

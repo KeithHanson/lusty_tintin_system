@@ -1,0 +1,25 @@
+#CLASS claustrophobia OPEN
+
+#SUBSTITUTE {Shadows creep up all around you and close in.}  { [<059>AFFLICTION:<088>] <069>CLAUSTROPHOBIA - EAT WORMWOOD OR FM }  {5}
+
+#ACTION {Shadows creep up all around you and close in.}
+{
+   #variable tmp_results {  @insert_affliction{CLAUSTROPHOBIA} }
+}
+{5}
+
+#SUBSTITUTE {The walls close in to suffocate you - you must escape!}  { [<059>AFFLICTION:<088>] <069>CLAUSTROPHOBIA - EAT WORMWOOD OR FM }  {5}
+#ACTION {The walls close in to suffocate you - you must escape!}
+{
+   #variable tmp_results {  @insert_affliction{CLAUSTROPHOBIA} }
+}
+{5}
+
+#SUBSTITUTE {Small spaces no longer frighten you.} {[<029>CURED:<088>] <069>CLAUSTROPHOBIA}
+#ACTION {Small spaces no longer frighten you.}
+{
+   #variable tmp_results {   @remove_affliction{CLAUSTROPHOBIA} }
+}
+{5}
+
+#CLASS claustrophobia CLOSE

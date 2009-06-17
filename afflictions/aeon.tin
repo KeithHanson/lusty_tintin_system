@@ -1,0 +1,45 @@
+#CLASS aeon OPEN
+
+#SUBSTITUTE {%1 stands an Aeon tarot on <his/her> palm and blows it at you.}  { [<059>AFFLICTION:<088>] <039>AEON - SIP PHLEGMATIC }  {5}
+#ACTION {%1 stands an Aeon tarot on <his/her> palm and blows it at you.}
+{
+	#variable tmp_results {  @insert_affliction{AEON} }
+}
+{5}
+
+#SUBSTITUTE {With a slow, jerking dance, %1 points at you and lowers %2 arms, and you feel the world about you slow.}  { [<059>AFFLICTION:<088>] <039>AEON - SIP PHLEGMATIC }  {5}
+#ACTION {With a slow, jerking dance, %1 points at you and lowers %2 arms, and you feel the world about you slow.}
+{
+	#variable tmp_results {  @insert_affliction{AEON} }
+}
+{5}
+
+#SUBSTITUTE {Suddenly your movements through the time stream are slowed.}  { [<059>AFFLICTION:<088>] <039>AEON - SIP PHLEGMATIC }  {5}
+#ACTION {Suddenly your movements through the time stream are slowed.}
+{
+	#variable tmp_results {  @insert_affliction{AEON} }
+}
+{5}
+
+#SUBSTITUTE {You move sluggishly into action.}  { [<059>AFFLICTION:<088>] <039>AEON - SIP PHLEGMATIC }  {5}
+#ACTION {You move sluggishly into action.}
+{
+	#variable tmp_results {  @insert_affliction{AEON} }
+}
+{5}
+
+#SUBSTITUTE {Filled with a haunting sorrow and unlimited love, an excruciatingly beautiful note brings tears to your eyes and a lump to your throat. Time slows and momentarily a vision fills your eyes of a goddess floating over an ancient pool with tears streaming down her face.}  { [<059>AFFLICTION:<088>] <039>AEON - SIP PHLEGMATIC }  {5}
+#ACTION {Filled with a haunting sorrow and unlimited love, an excruciatingly beautiful note brings tears to your eyes and a lump to your throat. Time slows and momentarily a vision fills your eyes of a goddess floating over an ancient pool with tears streaming down her face.}
+{
+	#variable tmp_results {  @insert_affliction{AEON} }
+}
+{5}
+
+#SUBSTITUTE {You return to the normal timestream.} {[<029>CURED:<088>] <039>AEON}
+#ACTION {You return to the normal timestream.}
+{
+	#variable tmp_results {   @remove_affliction{AEON} }
+}
+{5}
+
+#CLASS aeon CLOSE

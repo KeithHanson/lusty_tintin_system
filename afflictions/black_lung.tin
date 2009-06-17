@@ -1,0 +1,25 @@
+#CLASS black_lung OPEN
+
+#SUBSTITUTE {Shadows gather around the form of Black Shuck, the Darkhound as he opens his mouth fully, spewing forth darkness which forces its way down your throat and into your lungs.}  { [<059>AFFLICTION:<088>] <059>BLACK LUNG - APPLY MELANCHOLIC TO CHEST }  {5}
+
+#ACTION {Shadows gather around the form of Black Shuck, the Darkhound as he opens his mouth fully, spewing forth darkness which forces its way down your throat and into your lungs.}
+{
+   #variable tmp_results {  @insert_affliction{BLACK LUNG} }
+}
+{5}
+
+#SUBSTITUTE {You cough uncontrollably, as you hack up some black phlegm.}  { [<059>AFFLICTION:<088>] <059>BLACK LUNG - APPLY MELANCHOLIC TO CHEST }  {5}
+#ACTION {You cough uncontrollably, as you hack up some black phlegm.}
+{
+   #variable tmp_results {  @insert_affliction{BLACK LUNG} }
+}
+{5}
+
+#SUBSTITUTE {You breathe easier as your lungs clear up of the dreadful black phlegm.} {[<029>CURED:<088>] <059>BLACK LUNG}
+#ACTION {You breathe easier as your lungs clear up of the dreadful black phlegm.}
+{
+   #variable tmp_results {   @remove_affliction{BLACK LUNG} }
+}
+{5}
+
+#CLASS black_lung CLOSE

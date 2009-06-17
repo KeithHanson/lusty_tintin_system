@@ -1,0 +1,39 @@
+#CLASS pipe_lists OPEN
+
+#VAR pipe_one {pipe53047}
+#VAR pipe_two {pipe48279}
+#VAR pipe_three {pipe14424}
+#VAR lighting_pipes {0}
+#VAR pipe_defenses {1}
+
+#ALIAS light_pipes {light $pipe_one;light $pipe_two;light $pipe_three;#VAR pipe_defenses {1}}
+#ALIAS pipes_off {#VAR pipe_defenses {0}}
+#ALIAS pipe_def 
+{
+   outr faeleaf;
+   outr coltsfoot;
+   outr myrtle;
+   put faeleaf in $pipe_one;
+   put coltsfoot in $pipe_two;
+   put myrtle in $pipe_three;
+   light_pipes;
+}
+
+#ACTION {Your pipe has gone cold and dark.} 
+{
+   
+   #if {$lighting_pipes == 0 && $pipe_defenses == 1}
+   {
+      #VAR lighting_pipes {1};
+      light_pipes
+   }
+   {}
+   
+}
+
+#ACTION {You carefully light your treasured pipe until it is smoking nicely.}
+{
+   #VAR lighting_pipes {0}
+}
+
+#CLASS pipe_lists CLOSE

@@ -1,0 +1,239 @@
+#CLASS crippled_arms OPEN
+
+#SUBSTITUTE {The chain stretches taut around your left arm and then pulls taught, snapping the bone. }  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+
+#ACTION {The chain stretches taut around your left arm and then pulls taught, snapping the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {grinds into your left arm, crushing the bones.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {grinds into your left arm, crushing the bones.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {breaks your left arm.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {breaks your left arm.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {crushes your left arm.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {crushes your left arm.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {pulverizes your left arm.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {pulverizes your left arm.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {smashes your left arm.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {smashes your left arm.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {You watch, in horror, as your left arm shrivels up and becomes useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {You watch, in horror, as your left arm shrivels up and becomes useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {Your left arm is smashed with an awesome blow.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your left arm is smashed with an awesome blow.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+
+#SUBSTITUTE {brings it crashing down on your left arm. A bone breaks with an audible snap, rendering the limb useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {brings it crashing down on your left arm. A bone breaks with an audible snap, rendering the limb useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {The bones of your left arm suddenly snap.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {The bones of your left arm suddenly snap.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {The flesh on your left arm shrivels to the bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {The flesh on your left arm shrivels to the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {Your left arm is smashed and breaks}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your left arm is smashed and breaks}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {Your left arm suddenly stiffens and loses all feeling sensation, rendering it useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your left arm suddenly stiffens and loses all feeling sensation, rendering it useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {Your left arm is greatly healed, but still damaged.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your left arm is greatly healed, but still damaged.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {swiftly stomps on your left arm, causing you to wince.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {swiftly stomps on your left arm, causing you to wince.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
+}
+{5}
+
+#SUBSTITUTE {grinds into your right arm, crushing the bones.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {grinds into your right arm, crushing the bones.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {breaks your right arm}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {breaks your right arm}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {crushes your right arm}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {crushes your right arm}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {pulverizes your right arm}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {pulverizes your right arm}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {smashes your right arm}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {smashes your right arm}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {You watch, in horror, as your right arm shrivels up and becomes useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {You watch, in horror, as your right arm shrivels up and becomes useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {Your right arm is smashed with an awesome blow.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your right arm is smashed with an awesome blow.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {brings it crashing down on your right arm. A bone breaks with an audible snap, rendering the limb useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {brings it crashing down on your right arm. A bone breaks with an audible snap, rendering the limb useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {The bones of your right arm suddenly snap.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {The bones of your right arm suddenly snap.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {The flesh on your right arm shrivels to the bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {The flesh on your right arm shrivels to the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {Your right arm is smashed and breaks}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your right arm is smashed and breaks}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {Your right arm suddenly stiffens and loses all feeling sensation, rendering it useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your right arm suddenly stiffens and loses all feeling sensation, rendering it useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {%*arm, tearing through flesh and breaking bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED ARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {%*arm, tearing through flesh and breaking bone.}
+{
+   #variable tmp_results { @insert_affliction{CRIPPLED ARM} }
+}
+{5}
+
+#SUBSTITUTE {%*her massive jaws splintering bone with a sickening cracking noise.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED ARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {%*her massive jaws splintering bone with a sickening cracking noise.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED ARM} }
+}
+{5}
+
+#SUBSTITUTE {Your right arm is greatly healed, but still damaged.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {Your right arm is greatly healed, but still damaged.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {%*swiftly stomps on your right arm, causing you to wince.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RARM - APPLY MENDING TO ARMS }  {5}
+#ACTION {%*swiftly stomps on your right arm, causing you to wince.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
+}
+{5}
+
+#SUBSTITUTE {The bones in your left arm mend.} {[<029>CURED:<088>] <059>CRIPPLED LARM}
+#ACTION {The bones in your left arm mend.}
+{
+   #variable tmp_results {   @remove_affliction{CRIPPLED LARM} };
+   #variable tmp_results {   @remove_affliction{CRIPPLED ARM} }
+}
+{5}
+
+
+#SUBSTITUTE {The bones in your right arm mend.} {[<029>CURED:<088>] <059>CRIPPLED RARM}
+#ACTION {The bones in your right arm mend.}
+{
+   #variable tmp_results {   @remove_affliction{CRIPPLED RARM} };
+   #variable tmp_results {   @remove_affliction{CRIPPLED ARM} }
+}
+{5}
+
+#CLASS crippled_arms CLOSE

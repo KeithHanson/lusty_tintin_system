@@ -1,0 +1,25 @@
+#CLASS shyness OPEN
+
+#SUBSTITUTE {You look about yourself nervously.}  { [<059>AFFLICTION:<088>] <069>SHYNESS - DRINK PLEGMATIC OR SMOKE COLTSFOOT }  {5}
+
+#ACTION {You look about yourself nervously.}
+{
+   #variable tmp_results {  @insert_affliction{SHYNESS} }
+}
+{5}
+
+#SUBSTITUTE {Heart thumping, you cannot bear the company of others and depart in terror.}  { [<059>AFFLICTION:<088>] <069>SHYNESS - DRINK PHLEGMATIC OR SMOKE COLTSFOOT }  {5}
+#ACTION {Heart thumping, you cannot bear the company of others and depart in terror.}
+{
+   #variable tmp_results {  @insert_affliction{SHYNESS} }
+}
+{5}
+
+#SUBSTITUTE {Your shyness has been cured. You can now face the world boldly.} {[<029>CURED:<088>] <069>SHYNESS}
+#ACTION {Your shyness has been cured. You can now face the world boldly.}
+{
+   #variable tmp_results {   @remove_affliction{SHYNESS} }
+}
+{5}
+
+#CLASS shyness CLOSE

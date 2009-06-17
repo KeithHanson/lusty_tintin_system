@@ -1,0 +1,46 @@
+#CLASS burning OPEN
+
+#SUBSTITUTE {A robed obesefessor opens his book and a column of red fire shoots out and engulfs you.}  { [<059>AFFLICTION:<088>] <019>BURNING - DRINK FROST }  {5}
+
+#ACTION {A robed obesefessor opens his book and a column of red fire shoots out and engulfs you.}
+{
+   #variable tmp_results {  @insert_affliction{BURNING} }
+}
+{5}
+
+#SUBSTITUTE {Flames lick around you - you are on fire!}  { [<059>AFFLICTION:<088>] <019>BURNING - DRINK FROST }  {5}
+#ACTION {Flames lick around you - you are on fire!}
+{
+   #variable tmp_results {  @insert_affliction{BURNING} }
+}
+{5}
+
+#SUBSTITUTE {You sigh in relief as the fire on your body flickers and fades.} {[<029>CURED:<088>] <019>BURNING}
+#ACTION {You sigh in relief as the fire on your body flickers and fades.}
+{
+   #variable tmp_results {  @remove_affliction{BURNING} }
+}
+{5}
+
+#SUBSTITUTE {Steam rises from your skin as the fires that plague you are extinguished.} {[<029>CURED:<088>] <019>BURNING}
+#ACTION {Steam rises from your skin as the fires that plague you are extinguished.}
+{
+   #variable tmp_results {  @remove_affliction{BURNING} }
+}
+{5}
+
+#SUBSTITUTE {The raging fire about your skin goes out.} {[<029>CURED:<088>] <019>BURNING}
+#ACTION {The raging fire about your skin goes out.}
+{
+   #variable tmp_results {  @remove_affliction{BURNING} }
+}
+{5}
+
+#SUBSTITUTE {An enormous gorgog stares at you, the flames in his eyes brightening and searing you with intense, scorching heat.}  { [<059>AFFLICTION:<088>] <019>BURNING - SIP FROST }  {5}
+#ACTION {An enormous gorgog stares at you, the flames in his eyes brightening and searing you with intense, scorching heat.}
+{
+   #variable tmp_results {  @insert_affliction{BURNING} }
+}
+{5}
+
+#CLASS burning CLOSE

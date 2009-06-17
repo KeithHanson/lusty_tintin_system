@@ -1,0 +1,327 @@
+#CLASS crippled_legs OPEN
+
+#SUBSTITUTE {A two-headed abhorrence slams into your legs, knocking you to the ground and trampling you. You hear the sickening sound of bones crunching }  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEGS - APPLY MENDING TO LEGS }  {5}
+
+#ACTION {A two-headed abhorrence slams into your legs, knocking you to the ground and trampling you. You hear the sickening sound of bones crunching}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} };
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {Digging sharp spurs into the flanks of his steed, a champion of war whips it into a frenzy, trampling you under iron shod hooves}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEGS - APPLY MENDING TO LEGS }  {5}
+#ACTION {Digging sharp spurs into the flanks of his steed, a champion of war whips it into a frenzy, trampling you under iron shod hooves}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} };
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {You cannot move as both your legs are crippled.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEGS - APPLY MENDING TO LEGS }  {5}
+#ACTION {You cannot move as both your legs are crippled.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} };
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {A gila lizard slams into your legs, knocking you to the ground and trampling you. You hear the sickening sound of bones crunching}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEGS - APPLY MENDING TO LEGS }  {5}
+#ACTION {A gila lizard slams into your legs, knocking you to the ground and trampling you. You hear the sickening sound of bones crunching}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} };
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {You must have two legs to do that.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEGS - APPLY MENDING TO LEGS }  {5}
+#ACTION {You must have two legs to do that.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} };
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {The chain stretches taut around your left leg and then pulls taught, snapping the bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {The chain stretches taut around your left leg and then pulls taught, snapping the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {grinds into your left leg, crushing the bones.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {grinds into your left leg, crushing the bones.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {breaks your left leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {breaks your left leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {crushes your left leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {crushes your left leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {pulverizes your left leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {pulverizes your left leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {smashes your left leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {smashes your left leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {You watch, in horror, as your left leg shrivels up and becomes useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {You watch, in horror, as your left leg shrivels up and becomes useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your left leg is smashed with an awesome blow.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your left leg is smashed with an awesome blow.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {brings it crashing down on your left leg. A bone breaks with an audible snap, rendering the limb useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {brings it crashing down on your left leg. A bone breaks with an audible snap, rendering the limb useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {The bones of your left leg suddenly snap.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {The bones of your left leg suddenly snap.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {The flesh on your left leg shrivels to the bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {The flesh on your left leg shrivels to the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {You stumble as your left leg shrivels into a useless appendage.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {You stumble as your left leg shrivels into a useless appendage.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {You cry out in pain as your left leg twists and snaps beneath you.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {You cry out in pain as your left leg twists and snaps beneath you.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your left thigh bone is smashed and shatters}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your left thigh bone is smashed and shatters}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {You scream as you feel the force of the landing break both your legs.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEGS - APPLY MENDING TO LEGS }  {5}
+#ACTION {You scream as you feel the force of the landing break both your legs.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} };
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your left leg is smashed and breaks}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your left leg is smashed and breaks}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your left leg suddenly stiffens and loses all feeling sensation, rendering it useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your left leg suddenly stiffens and loses all feeling sensation, rendering it useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your left leg is greatly healed, but still damaged.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your left leg is greatly healed, but still damaged.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {swiftly stomps on your left leg, causing you to wince.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {swiftly stomps on your left leg, causing you to wince.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
+}
+{5}
+
+#SUBSTITUTE {The chain stretches taut around your right leg and then pulls taught, snapping the bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {The chain stretches taut around your right leg and then pulls taught, snapping the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {grinds into your right leg, crushing the bones.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {grinds into your right leg, crushing the bones.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {breaks your right leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {breaks your right leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {crushes your right leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {crushes your right leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {pulverizes your right leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {pulverizes your right leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {smashes your right leg.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {smashes your right leg.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {You watch, in horror, as your right leg shrivels up and becomes useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {You watch, in horror, as your right leg shrivels up and becomes useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your right leg is smashed with an awesome blow.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your right leg is smashed with an awesome blow.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {brings it crashing down on your right leg. A bone breaks with an audible snap, rendering the limb useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {brings it crashing down on your right leg. A bone breaks with an audible snap, rendering the limb useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {The bones of your right leg suddenly snap.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {The bones of your right leg suddenly snap.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {The flesh on your right leg shrivels to the bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {The flesh on your right leg shrivels to the bone.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {You stumble as your right leg shrivels into a useless appendage.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {You stumble as your right leg shrivels into a useless appendage.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {You cry out in pain as your right leg twists and snaps beneath you.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {You cry out in pain as your right leg twists and snaps beneath you.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your right thigh bone is smashed and shatters}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your right thigh bone is smashed and shatters}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your right leg is smashed and breaks}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your right leg is smashed and breaks}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {%*leg, tearing through flesh and breaking bone.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {leg, tearing through flesh and breaking bone.}
+{
+   #variable tmp_results { @insert_affliction{CRIPPLED LEG} }
+}
+{5}
+
+#SUBSTITUTE {Your right leg suddenly stiffens and loses all feeling sensation, rendering it useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your right leg suddenly stiffens and loses all feeling sensation, rendering it useless.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {Your right leg is greatly healed, but still damaged.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {Your right leg is greatly healed, but still damaged.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {swiftly stomps on your right leg, causing you to wince.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {swiftly stomps on your right leg, causing you to wince.}
+{
+   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
+}
+{5}
+
+#SUBSTITUTE {The bones in your left leg mend.} {[<029>CURED:<088>] <059>CRIPPLED LLEG}
+#ACTION {The bones in your left leg mend.}
+{
+   #variable tmp_results {   @remove_affliction{CRIPPLED LLEG} }
+   #variable tmp_results {   @remove_affliction{CRIPPLED LEG} }
+}
+{5}
+
+#SUBSTITUTE {The bones in your right leg mend.} {[<029>CURED:<088>] <059>CRIPPLED RLEG}
+#ACTION {The bones in your right leg mend.}
+{
+   #variable tmp_results {   @remove_affliction{CRIPPLED RLEG} }
+   #variable tmp_results {   @remove_affliction{CRIPPLED LEG} }
+}
+{5}
+
+#CLASS crippled_legs CLOSE

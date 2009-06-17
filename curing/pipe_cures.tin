@@ -1,0 +1,66 @@
+#CLASS pipe_cures OPEN
+
+#VAR pipe_cures
+{
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {smoke coltsfoot}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {smoke coltsfoot}
+   {NONE}
+   {NONE}
+   {NONE}
+   {smoke myrtle}
+   {smoke myrtle}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {smoke coltsfoot}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+}
+
+#CLASS pipe_cures CLOSE

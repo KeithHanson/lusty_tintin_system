@@ -1,0 +1,19 @@
+#CLASS {basic_actions} OPEN
+
+#ACTION {You follow}
+{
+	map;
+	ql
+}
+{5}
+
+#ACTION {You open your eyes and yawn mightily.}
+{
+	stand
+}
+{5}
+
+
+
+
+#CLASS {basic_actions} CLOSE

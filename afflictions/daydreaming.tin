@@ -1,0 +1,109 @@
+#CLASS daydreaming OPEN
+
+#SUBSTITUTE {A sadistic smile spreads across your face as you imagine yourself leading the tainted armies to massacre Celest. }  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+
+#ACTION {A sadistic smile spreads across your face as you imagine yourself leading the tainted armies to massacre Celest.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {A fleeting vision fills your mind of a mighty stag leaping ahead of you under silver moonlight, leading a noble chase through verdant forests.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {A fleeting vision fills your mind of a mighty stag leaping ahead of you under silver moonlight, leading a noble chase through verdant forests.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {A vision of yourself leaving the Basin and finding life beyond its borders briefly crosses your mind, but you discard it as utterly ridiculous.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {A vision of yourself leaving the Basin and finding life beyond its borders briefly crosses your mind, but you discard it as utterly ridiculous.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {You pause as you try to imagine what the world would be like if there hadn't been any Soulless Gods.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {You pause as you try to imagine what the world would be like if there hadn't been any Soulless Gods.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {You pause momentarily as you try to imagine what true peace would be like.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {You pause momentarily as you try to imagine what true peace would be like.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {You smile as you imagine yourself as the greatest chieftain of the Seren.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {You smile as you imagine yourself as the greatest chieftain of the Seren.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {You stop for a moment to think about how great it would be if you were a god.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {You stop for a moment to think about how great it would be if you were a god.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {Your attention slips away from the material world as you ponder on the wonders of the Planes.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {Your attention slips away from the material world as you ponder on the wonders of the Planes.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {Your mind wanders as you dream of riches and fame.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {Your mind wanders as you dream of riches and fame.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {Your mind wanders as you dream of greatness.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {Your mind wanders as you dream of greatness.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {Your mind wanders momentarily to greatness as you imagine yourself single-handedly protecting the Seren from its enemies.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {Your mind wanders momentarily to greatness as you imagine yourself single-handedly protecting the Seren from its enemies.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {Your mind wanders momentarily as you envision the totem spirits of the forest animals trying to convey a message to you that you can't quite understand.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {Your mind wanders momentarily as you envision the totem spirits of the forest animals trying to convey a message to you that you can't quite understand.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {A vision of yourself exploring the lands outside the Basin drifts across your mind.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {A vision of yourself exploring the lands outside the Basin drifts across your mind.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {A sudden shiver shoots up your spine, making you involuntarily jerk as a creeping sensation crawls over your skin.}  { [<059>AFFLICTION:<088>] <019>DAYDREAMING - EAT KAFE }  {5}
+#ACTION {A sudden shiver shoots up your spine, making you involuntarily jerk as a creeping sensation crawls over your skin.}
+{
+   #variable tmp_results {  @insert_affliction{DAYDREAMING} }
+}
+{5}
+
+#SUBSTITUTE {Your mind quickly focuses on the real world, shrugging off childish daydreams} {[<029>CURED:<088>] <019>DAYDREAMING}
+#ACTION {Your mind quickly focuses on the real world, shrugging off childish daydreams}
+{
+   #variable tmp_results {   @remove_affliction{DAYDREAMING} }
+}
+{5}
+
+#CLASS daydreaming CLOSE

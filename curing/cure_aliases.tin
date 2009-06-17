@@ -1,0 +1,15 @@
+#CLASS cure_aliases OPEN
+
+#alias eat_horehound {outr horehound;eat horehound}
+#alias eat_galingale {outr galingale;eat galingale}
+#alias eat_wormwood {outr wormwood;eat wormwood}
+#alias eat_myrtle {outr myrtle;eat myrtle}
+#alias eat_kombu {outr kombu;eat kombu}
+#alias eat_kafe {outr kafe;eat kafe}
+#alias eat_pennyroyal {outr pennyroyal;eat pennyroyal}
+#alias eat_yarrow {outr yarrow;eat yarrow}
+#alias eat_reishi {outr reishi;eat reishi}
+#alias eat_calamus {outr calamus;eat calamus}
+#alias eat_faeleaf {outr faeleaf;eat faeleaf}
+
+#CLASS cure_aliases CLOSE

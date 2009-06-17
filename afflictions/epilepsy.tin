@@ -1,0 +1,25 @@
+#CLASS epilepsy OPEN
+
+#SUBSTITUTE {Your nerves feel suddenly jangled.}  { [<059>AFFLICTION:<088>] <019>EPILEPSY - EAT KOMBU }  {5}
+
+#ACTION {Your nerves feel suddenly jangled.}
+{
+   #variable tmp_results {  @insert_affliction{EPILEPSY} }
+}
+{5}
+
+#SUBSTITUTE {Your limbs begin to jerk and shake uncontrollably, and you begin to foam at the mouth.}  { [<059>AFFLICTION:<088>] <019>EPILEPSY - EAT KOMBU }  {5}
+#ACTION {Your limbs begin to jerk and shake uncontrollably, and you begin to foam at the mouth.}
+{
+   #variable tmp_results {  @insert_affliction{EPILEPSY} }
+}
+{5}
+
+#SUBSTITUTE {Your nerves suddenly calm down.} {[<029>CURED:<088>] <019>EPILEPSY}
+#ACTION {Your nerves suddenly calm down.}
+{
+   #variable tmp_results {   @remove_affliction{EPILEPSY} }
+}
+{5}
+
+#CLASS epilepsy CLOSE

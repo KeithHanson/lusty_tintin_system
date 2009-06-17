@@ -1,0 +1,190 @@
+#CLASS {macros} OPEN
+
+#MACRO {\eOl}
+{
+	d
+}
+
+#MACRO {\eOm}
+{
+	up
+}
+
+#MACRO {\eOn}
+{
+	drink health
+}
+
+#MACRO {\eOp}
+{
+   #if {$enemy_shield == 0}
+   {
+      jab $target
+   }
+   {
+      raze $target
+   }
+}
+
+#MACRO {\eOq}
+{
+	#if {"$mode" == "normal"}
+	{
+		sw
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry lleg 100
+	};
+	#if {"$mode" == "target"}
+	{
+		strike $target lleg
+	}
+}
+
+#MACRO {\eOr}
+{
+	#if {"$mode" == "normal"}
+	{
+		s
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry rleg 50;
+		parry lleg 50
+	}
+}
+
+#MACRO {\eOs}
+{
+	#if {"$mode" == "normal"}
+	{
+		se
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry rleg 100
+	};
+	#if {"$mode" == "target"}
+	{
+		strike $target rleg
+	}
+}
+
+#MACRO {\eOt}
+{
+	#if {"$mode" == "normal"}
+	{
+		w
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry larm 100
+	};
+	#if {"$mode" == "target"}
+	{
+		strike $target larm
+	}
+}
+
+#MACRO {\eOu}
+{
+	#if {"$mode" == "normal"}
+	{
+		map;
+		ql
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry all
+	}
+	#if {"$mode" == "target"}
+	{
+	   strike $target gut
+	}
+}
+
+#MACRO {\eOv}
+{
+	#if {"$mode" == "normal"}
+	{
+		e
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry rarm 100
+	};
+	#if {"$mode" == "target"}
+	{
+		strike $target rarm
+	}
+}
+
+#MACRO {\eOw}
+{
+	#if {"$mode" == "normal"}
+	{
+		nw
+	}
+}
+
+#MACRO {\eOx}
+{
+	#if {"$mode" == "normal"}
+	{
+		n
+	};
+	#if {"$mode" == "parry"}
+	{
+		parry head 100
+	};
+	#if {"$mode" == "target"}
+	{
+		strike $target head
+	}
+}
+
+#MACRO {\eOy}
+{
+	#if {"$mode" == "normal"}
+	{
+		ne
+	}
+}
+
+#MACRO {\e[24~}
+{
+	#variable mode parry;
+	#showme Set Mode to: <019>Parry
+}
+
+#MACRO {\e[25~}
+{
+	#variable mode target;
+	#showme Set Mode to: <019>Target
+}
+
+#MACRO {\e[29~}
+{
+	#variable mode normal;
+	#showme Set Mode to: <019>Normal
+}
+
+#MACRO {\eOQ}
+{
+   #SHOWME {[<029>CURING:<088> $afflictions[1]]};
+   #variable tmp_results {@cure_next{$afflictions[1]}};
+}
+
+#MACRO {\eOR}
+{
+   #SHOWME {[<029>Cycling through defenses<088>]};
+   #VAR tmp_results @next_defense{}
+}
+
+#MACRO {\eOS}
+{
+   raze $target
+}
+
+#CLASS {macros} CLOSE

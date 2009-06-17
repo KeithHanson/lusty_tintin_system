@@ -1,0 +1,25 @@
+#CLASS justice OPEN
+
+#SUBSTITUTE {Justice is dealt out and your attack rebounds onto you.}  { [<059>AFFLICTION:<088>] <019>JUSTICE - EAT REISHI }  {5}
+
+#ACTION {Justice is dealt out and your attack rebounds onto you.}
+{
+   #variable tmp_results { @insert_affliction{JUSTICE} }
+}
+{5}
+
+#SUBSTITUTE {A surge of domotheos justice energy rises around %1 and then slams into you.}  { [<059>AFFLICTION:<088>] <019>JUSTICE - EAT REISHI }  {5}
+#ACTION {A surge of domotheos justice energy rises around %1 and then slams into you.}
+{
+   #variable tmp_results { @insert_affliction{JUSTICE} }
+}
+{5}
+
+#SUBSTITUTE {The curse of justice leaves you.} {[<029>CURED:<088>] <019>JUSTICE}
+#ACTION {The curse of justice leaves you.}
+{
+   #variable tmp_results { @remove_affliction{JUSTICE} }
+}
+{5}
+
+#CLASS justice CLOSE

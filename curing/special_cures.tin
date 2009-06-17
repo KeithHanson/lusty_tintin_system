@@ -1,0 +1,65 @@
+#CLASS special_cures OPEN
+
+#VAR special_cures
+{
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {writhe}
+   {writhe}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {writhe}
+   {NONE}
+   {NONE}
+   {NONE}
+   {writhe}
+   {NONE}
+   {NONE}
+   {NONE}
+   {focus body}
+   {NONE}
+   {NONE}
+   {stand}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+}
+
+#CLASS special_cures CLOSE

@@ -1,0 +1,5 @@
+#CLASS attraction OPEN
+
+#SUBSTITUTE {You find you cannot bear to part from %1}  { [<059>AFFLICTION:<088>] <069>ATTRACTION - EAT FAELEAF OR SIP TETRODIN }  {5}
+
+#CLASS attraction CLOSE

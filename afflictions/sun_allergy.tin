@@ -1,0 +1,25 @@
+#CLASS sun_allergy OPEN
+
+#SUBSTITUTE {Sunlight shines down upon you mercilessly, rippling across your skin like fire.}  { [<059>AFFLICTION:<088>] <069>SUN ALLERGY - APPLY LINIMENT }  {5}
+
+#ACTION {Sunlight shines down upon you mercilessly, rippling across your skin like fire.}
+{
+   #variable tmp_results {  @insert_affliction{SUN ALLERGY} }
+}
+{5}
+
+#SUBSTITUTE {You feel your allergy to the sun going into temporary remission.}  { [<059>AFFLICTION:<088>] <069>SUN ALLERGY - APPLY LINIMENT }  {5}
+#ACTION {You feel your allergy to the sun going into temporary remission.}
+{
+   #variable tmp_results {  @insert_affliction{SUN ALLERGY} }
+}
+{5}
+
+#SUBSTITUTE {No longer will the sunlight harm you.} {[<029>CURED:<088>] <069>SUN ALLERGY}
+#ACTION {No longer will the sunlight harm you.}
+{
+   #variable tmp_results {   @remove_affliction{SUN ALLERGY} }
+}
+{5}
+
+#CLASS sun_allergy CLOSE

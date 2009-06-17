@@ -1,0 +1,82 @@
+#CLASS paralysis OPEN
+
+#SUBSTITUTE {%*Your muscles freeze up painfully as the chill of the grave seeps into your body.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {Your muscles freeze up painfully as the chill of the grave seeps into your body.}
+{
+   #variable tmp_results { @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {Frustratingly, your body won't respond to your call to action.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+
+#ACTION {Frustratingly, your body won't respond to your call to action.}
+{
+   #variable tmp_results {  @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {You are paralysed and unable to do that.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {You are paralysed and unable to do that.}
+{
+   #variable tmp_results {  @insert_affliction{PARAYLSIS} };
+   #variable tmp_results {  @insert_affliction{CHILLS} }
+}
+{5}
+
+#SUBSTITUTE {You are paralysed and cannot do that.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {You are paralysed and cannot do that.}
+{
+   #variable tmp_results {  @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {Your state of paralysis prevents you from doing that.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {Your state of paralysis prevents you from doing that.}
+{
+   #variable tmp_results {  @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {Flying insects suddenly swarm you, covering you with tiny, painful stings.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {Flying insects suddenly swarm you, covering you with tiny, painful stings.}
+{
+   #variable tmp_results {  @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {A loathsome cockatrice gazes at you, its eyes glowing red.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {A loathsome cockatrice gazes at you, its eyes glowing red.}
+{
+   #variable tmp_results {  @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {Your body stiffens rapidly with paralysis.}  { [<059>AFFLICTION:<088>] <039>PARALYSIS - FOCUS BODY }  {5}
+#ACTION {Your body stiffens rapidly with paralysis.}
+{
+   #variable tmp_results {  @insert_affliction{PARALYSIS} }
+}
+{5}
+
+#SUBSTITUTE {A noxious fume squirts out of a %1 zombie, making your jaw tighten%1}  { [<059>AFFLICTION:<088>] <039>PARALYSIS - FOCUS BODY }  {5}
+#ACTION {A noxious fume squirts out of a %1 zombie, making your jaw tighten%1}
+{
+   #variable tmp_results {  @insert_affliction{PARALYSIS} }
+}
+{5}
+
+#SUBSTITUTE {%*and suddenly you are unable to move.}  { [<059>AFFLICTION:<088>] <059>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {and suddenly you are unable to move.}
+{
+   #variable tmp_results { @insert_affliction{PARAYLSIS} }
+}
+{5}
+
+#SUBSTITUTE {Your muscles unlock; you are no longer paralysed.} {[<029>CURED:<088>] <039>PARAYLSIS}
+#ACTION {Your muscles unlock; you are no longer paralysed.}
+{
+   #variable tmp_results {   @remove_affliction{PARAYLSIS} }
+}
+{5}
+
+#CLASS paralysis CLOSE
