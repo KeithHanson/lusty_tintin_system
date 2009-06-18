@@ -287,6 +287,13 @@
 }
 {5}
 
+#SUBSTITUTE {%* wraps its tail about one of your legs and squeezes until the bones break.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED LEG - APPLY MENDING TO LEGS }  {5}
+#ACTION {%* wraps its tail about one of your legs and squeezes until the bones break.}
+{
+   #variable tmp_results { @insert_affliction{CRIPPLED LEG} }
+}
+{5}
+
 #SUBSTITUTE {Your right leg suddenly stiffens and loses all feeling sensation, rendering it useless.}  { [<059>AFFLICTION:<088>] <059>CRIPPLED RLEG - APPLY MENDING TO LEGS }  {5}
 #ACTION {Your right leg suddenly stiffens and loses all feeling sensation, rendering it useless.}
 {
@@ -311,7 +318,7 @@
 #SUBSTITUTE {The bones in your left leg mend.} {[<029>CURED:<088>] <059>CRIPPLED LLEG}
 #ACTION {The bones in your left leg mend.}
 {
-   #variable tmp_results {   @remove_affliction{CRIPPLED LLEG} }
+   #variable tmp_results {   @remove_affliction{CRIPPLED LLEG} };
    #variable tmp_results {   @remove_affliction{CRIPPLED LEG} }
 }
 {5}
@@ -319,7 +326,7 @@
 #SUBSTITUTE {The bones in your right leg mend.} {[<029>CURED:<088>] <059>CRIPPLED RLEG}
 #ACTION {The bones in your right leg mend.}
 {
-   #variable tmp_results {   @remove_affliction{CRIPPLED RLEG} }
+   #variable tmp_results {   @remove_affliction{CRIPPLED RLEG} };
    #variable tmp_results {   @remove_affliction{CRIPPLED LEG} }
 }
 {5}

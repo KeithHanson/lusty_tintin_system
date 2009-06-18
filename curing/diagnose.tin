@@ -11,168 +11,606 @@
 
 #ACTION {^ablaze.$}
 {
-   #variable tmp_results {  @insert_affliction{BURNING} }
+  #variable tmp_results {  @insert_affliction{BURNING} }
 }
 
-#ACTION{^afflicted with an achromatic aura.$}
+#ACTION {^afflicted with an achromatic aura.$}
 {
-   #variable tmp_results {  @insert_affliction{ACHROMATIC AURA} }
+  #variable tmp_results {  @insert_affliction{ACHROMATIC AURA} }
 }
 
-#ACTION{^addicted to elixirs.$}
+#ACTION {^addicted to elixirs.$}
 {
-   #variable tmp_results {  @insert_affliction{ADDICTION} }
+  #variable tmp_results {  @insert_affliction{ADDICTION} }
 }
 
 #ACTION {^afflicted with the curse of the Aeon.$}
 {
-   #variable tmp_results {  @insert_affliction{AEON}
+  #variable tmp_results {  @insert_affliction{AEON} }
 }
+
 #ACTION {^agoraphobic.$}
 {
-   #variable tmp_results {  @insert_affliction{AGORAPHOBIA}
-}
-#ACTION {^suffering from amnesia.$}
-{
-   #variable tmp_results {  @insert_affliction{AMNESIA}
-}
-
-#ACTION {^without a left leg.$}
-{
-   #variable tmp_results {  @insert_affliction{AMPUTATED LLEG}
-}
-
-#ACTION {^without a right leg.$}
-{
-   #variable tmp_results {  @insert_affliction{AMPUTATED RLEG}
+  #variable tmp_results {  @insert_affliction{AGORAPHOBIA} }
 }
 
 #ACTION {^without a left arm.$}
 {
-   #variable tmp_results {  @insert_affliction{AMPUTATED LARM}
+  #variable tmp_results {  @insert_affliction{AMPUTATED LARM} }
 }
 
 #ACTION {^without a right arm.$}
 {
-   #variable tmp_results {  @insert_affliction{AMPUTATED RARM}
+  #variable tmp_results {  @insert_affliction{AMPUTATED RARM} }
+}
+
+#ACTION {^without a left leg.$}
+{
+  #variable tmp_results {  @insert_affliction{AMPUTATED LLEG} }
+}
+
+#ACTION {^without a right leg.$}
+{
+  #variable tmp_results {  @insert_affliction{AMPUTATED RLEG} }
 }
 
 #ACTION {^anorexic.$}
 {
-   #variable tmp_results {  @insert_affliction{ANOREXIA}
+  #variable tmp_results {  @insert_affliction{ANOREXIA} }
 }
+
 #ACTION {^afflicted by horrible asthma.$}
 {
-   #variable tmp_results {  @insert_affliction{ASTHMA}
+  #variable tmp_results {  @insert_affliction{ASTHMA} }
 }
+
 #ACTION {^coughing up dreadful black phlegm.$}
 {
-   #variable tmp_results {  @insert_affliction{BLACK LUNG}
+  #variable tmp_results {  @insert_affliction{BLACK LUNG} }
 }
+
 #ACTION {^blind.$}
 {
-   #variable tmp_results {  @insert_affliction{BLIND}
+  #variable tmp_results {  @insert_affliction{BLIND} }
 }
-#ACTION {^afflicted with a blood clot in the %*$}
+
+#ACTION {^afflicted with a blood clot in the left shoulder.$}
 {
-   #variable tmp_results {  @insert_affliction{BLOOD CLOT}
+  #variable tmp_results {  @insert_affliction{CLOT LSHOULDER} }
 }
+
+#ACTION {^afflicted with a blood clot in the right shoulder.$}
+{
+  #variable tmp_results {  @insert_affliction{CLOT RSHOULDER} }
+}
+
+#ACTION {^afflicted with a blood clot in the left hip.$}
+{
+  #variable tmp_results {  @insert_affliction{CLOT LHIP} }
+}
+
+#ACTION {^afflicted with a blood clot in the right hip.$}
+{
+  #variable tmp_results {  @insert_affliction{CLOT RHIP} }
+}
+
 #ACTION {^suffering from a broken chest.$}
 {
-   #variable tmp_results {  @insert_affliction{BROKEN CHEST}
+  #variable tmp_results {  @insert_affliction{BROKEN CHEST} }
 }
+
 #ACTION {^suffering from a broken jaw.$}
 {
-   #variable tmp_results {  @insert_affliction{BROKEN JAW}
+  #variable tmp_results {  @insert_affliction{BROKEN JAW} }
 }
 
-#ACTION {^afflicted by a crippled right leg$}
+#ACTION {^afflicted by a crippled left arm}.$}
 {
-   #variable tmp_results {  @insert_affliction{CRIPPLED RLEG}
+  #variable tmp_results {  @insert_affliction{CRIPPLED LARM} }
 }
 
-#ACTION {^afflicted by a crippled left leg$}
+#ACTION {^afflicted by a crippled right arm.$}
 {
-   #variable tmp_results {  @insert_affliction{CRIPPLED LLEG}
+  #variable tmp_results {  @insert_affliction{CRIPPLED RARM} }
 }
 
-#ACTION {^afflicted by a crippled left arm$}
+#ACTION {^afflicted by a crippled left leg.$}
 {
-   #variable tmp_results {  @insert_affliction{CRIPPLED LARM}
+  #variable tmp_results {  @insert_affliction{CRIPPLED LLEG} }
 }
 
-#ACTION {^afflicted by a crippled right arm$}
+#ACTION {^afflicted by a crippled right leg}.$}
 {
-   #variable tmp_results {  @insert_affliction{CRIPPLED RARM}
+  #variable tmp_results {  @insert_affliction{CRIPPLED RLEG} }
 }
 
 #ACTION {^suffering a broken nose.$}
 {
-   #variable tmp_results {  @insert_affliction{BROKEN NOSE}
+  #variable tmp_results {  @insert_affliction{BROKEN NOSE} }
 }
+
 #ACTION {^suffering a broken left wrist.$}
 {
-   #variable tmp_results {  @insert_affliction{BROKEN LWRIST}
+  #variable tmp_results {  @insert_affliction{BROKEN LWRIST} }
 }
+
 #ACTION {^suffering a broken right wrist.$}
 {
-   #variable tmp_results {  @insert_affliction{BROKEN RWRIST}
+  #variable tmp_results {  @insert_affliction{BROKEN RWRIST} }
 }
+
 #ACTION {^suffering from massive organ failure.$}
 {
-   #variable tmp_results {  @insert_affliction{BURST ORGANS}
+  #variable tmp_results {  @insert_affliction{BURST ORGANS} }
 }
+
+#ACTION {^suffering %1 burst blood vessels.$}
+{
+  #variable tmp_results {  @insert_affliction{BURST VESSELS} }
+}
+
+#ACTION {^captivated by the music of %1.$}
+{
+  #variable tmp_results {  @insert_affliction{CAPTIVATION} }
+}
+
+#ACTION {^experiencing heavy chest pain.$}
+{
+  #variable tmp_results {  @insert_affliction{CHEST PAIN} }
+}
+
+#ACTION {^clamped on the left arm by a hound's jaws.$}
+{
+  #variable tmp_results {  @insert_affliction{CLAMPED LARM} }
+}
+
+#ACTION {^clamped on the right arm by a hound's jaws.$}
+{
+  #variable tmp_results {  @insert_affliction{CLAMPED RARM} }
+}
+
 #ACTION {^claustrophobic.$}
 {
-   #variable tmp_results {  @insert_affliction{CLAUSTROPHOBIA}
+  #variable tmp_results {  @insert_affliction{CLAUSTROPHOBIA} }
 }
+
 #ACTION {^afflicted with clumsiness.$}
 {
-   #variable tmp_results {  @insert_affliction{CLUMSINESS}
+  #variable tmp_results {  @insert_affliction{CLUMSINESS} }
 }
+
+#ACTION {^suffering from collapsed lungs.$}
+{
+  #variable tmp_results {  @insert_affliction{COLLAPSED LUNGS} }
+}
+
+#NOP This is where I stopped checking the afflictions_list last...
+#NOP There will probably be more afflictions here that aren't setup to be cured yet.
+
+#ACTION {^suffering from a collapsed left arm nerve.$}
+{
+  #variable tmp_results {  @insert_affliction{NERVES LARM} }
+}
+
+#ACTION {^suffering from a collapsed right arm nerve.$}
+{
+  #variable tmp_results {  @insert_affliction{NERVES RARM} }
+}
+
+#ACTION {^has a serious concussion.$}
+{
+  #variable tmp_results {  @insert_affliction{CONCUSSION} }
+}
+
 #ACTION {^confused.$}
 {
-   #variable tmp_results {  @insert_affliction{CONFUSION}
+  #variable tmp_results {  @insert_affliction{CONFUSION} }
 }
+
+#ACTION {^inflicted with a cracked left elbow.$}
+{
+  #variable tmp_results {  @insert_affliction{CRACKED LELBOW} }
+}
+
+#ACTION {^inflicted with a cracked right elbow.$}
+{
+  #variable tmp_results {  @insert_affliction{CRACKED RELBOW} }
+}
+
+#ACTION {^inflicted with a cracked left kneecap.$}
+{
+  #variable tmp_results {  @insert_affliction{CRACKED LKNEECAP} }
+}
+
+#ACTION {^inflicted with a cracked right kneecap.$}
+{
+  #variable tmp_results {  @insert_affliction{CRACKED RKNEECAP} }
+}
+
 #ACTION {^dying from crotamine.$}
 {
-   #variable tmp_results {  @insert_affliction{CROTAMINE}
+  #variable tmp_results {  @insert_affliction{CROTAMINE} }
 }
+
+#ACTION {^suffering a crushed chest.$}
+{
+  #variable tmp_results {  @insert_affliction{CRUSHED CHEST} }
+}
+
+#ACTION {^limping on a crushed left foot.$}
+{
+  #variable tmp_results {  @insert_affliction{CRUSHED LFOOT} }
+}
+
+#ACTION {^limping on a crushed right foot.$}
+{
+  #variable tmp_results {  @insert_affliction{CRUSHED RFOOT} }
+}
+
+#ACTION {^muted by a crushed windpipe.$}
+{
+  #variable tmp_results {  @insert_affliction{CRUSHED WINDPIPE} }
+}
+
+#ACTION {^has a partially damaged head.$}
+{
+  #variable tmp_results {  @insert_affliction{DAMAGED HEAD} }
+}
+
+#ACTION {^afflicted with the darkseed inplanted beneath the skin.$}
+{
+  #variable tmp_results {  @insert_affliction{DARKSEED} }
+}
+
 #ACTION {^plagued by childish daydreams.$}
 {
-   #variable tmp_results {  @insert_affliction{DAYDREAMING}
+  #variable tmp_results {  @insert_affliction{DAYDREAMING} }
 }
+
 #ACTION {^of a deadened mind.$}
 {
-   #variable tmp_results {  @insert_affliction{DEADENING}
+  #variable tmp_results {  @insert_affliction{DEADENING} }
 }
+
+#ACTION {^deaf.$}
+{
+  #variable tmp_results {  @insert_affliction{DEAFNESS} }
+}
+
+#ACTION {^marked by a small stain on the throat.$}
+{
+  #variable tmp_results {  @insert_affliction{DEATH MARK} }
+}
+
 #ACTION {^demented.$}
 {
-   #variable tmp_results {  @insert_affliction{DEMENTIA} }
+  #variable tmp_results {  @insert_affliction{DEMENTIA} }
 }
+
+#ACTION {^disemboweled.$}
+{
+  #variable tmp_results {  @insert_affliction{DISEMBOWELMENT} }
+}
+
+#ACTION {^suffering from a dislocated left arm.$}
+{
+  #variable tmp_results {  @insert_affliction{DISLOCATED LARM} }
+}
+
+#ACTION {^suffering from a dislocated right arm.$}
+{
+  #variable tmp_results {  @insert_affliction{DISLOCATED RARM} }
+}
+
+#ACTION {^suffering from a dislocated left leg.$}
+{
+  #variable tmp_results {  @insert_affliction{DISLOCATED LLEG} }
+}
+
+#ACTION {^suffering from a dislocated right leg.$}
+{
+  #variable tmp_results {  @insert_affliction{DISLOCATED RLEG} }
+}
+
+#ACTION {^has an aura of repugnance.$}
+{
+  #variable tmp_results {  @insert_affliction{DISLOYALTY} }
+}
+
 #ACTION {^overcome by dizziness.$}
 {
-   #variable tmp_results {  @insert_affliction{DIZZINESS} }
+  #variable tmp_results {  @insert_affliction{DIZZINESS} }
 }
+
 #ACTION {^suffering from a bad bout of dysentery.$}
 {
-   #variable tmp_results {  @insert_affliction{DYSENTERY} }
+  #variable tmp_results {  @insert_affliction{DYSENTERY} }
 }
+
+#ACTION {^suffering from the effects of blank note.$}
+{
+  #variable tmp_results {  @insert_affliction{EARACHE} }
+}
+
+#ACTION {^covered in ectoplasm.$}
+{
+  #variable tmp_results {  @insert_affliction{ECTOPLASM} }
+}
+
+#ACTION {^cursed by ego vice.$}
+{
+  #variable tmp_results {  @insert_affliction{EGOVICE} }
+}
+
+#ACTION {^enfeebled.$}
+{
+  #variable tmp_results {  @insert_affliction{ENFEEBLE} }
+}
+
 #ACTION {^entangled.$}
 {
-   #variable tmp_results {  @insert_affliction{ENTANGLED} }
+  #variable tmp_results {  @insert_affliction{ENTANGLEMENT} }
 }
+
 #ACTION {^suffering from epilepsy.$}
 {
-   #variable tmp_results {  @insert_affliction{EPILEPSY} }
+  #variable tmp_results {  @insert_affliction{EPILEPSY} }
 }
+
+#ACTION {^afflicted by fear.$}
+{
+  #variable tmp_results {  @insert_affliction{FEAR} }
+}
+
+#ACTION {^suffering from a fractured left arm.$}
+{
+  #variable tmp_results {  @insert_affliction{FRACTURED LARM} }
+}
+
+#ACTION {^suffering from a fractured right arm.$}
+{
+  #variable tmp_results {  @insert_affliction{FRACTURED RARM} }
+}
+
+#ACTION {^suffering from a fractured skull.$}
+{
+  #variable tmp_results {  @insert_affliction{FRACTURED SKULL} }
+}
+
+#ACTION {^frozen stiff.$}
+{
+  #variable tmp_results {  @insert_affliction{FROZEN} }
+}
+
+#ACTION {^bleeding through a furrowed brow.$}
+{
+  #variable tmp_results {  @insert_affliction{FURROWED BROW} }
+}
+
+#ACTION {^twitching in the face due to a gash.$}
+{
+  #variable tmp_results {  @insert_affliction{GASHED CHEEK} }
+}
+
+#ACTION {^extremely generous.$}
+{
+  #variable tmp_results {  @insert_affliction{GENEROSITY} }
+}
+
+#ACTION {^gluttonous.$}
+{
+  #variable tmp_results {  @insert_affliction{GLUTTONY} }
+}
+
+#ACTION {^grappled by {name}.$}
+{
+  #variable tmp_results {  @insert_affliction{GRAPPLED} }
+}
+
 #ACTION {^afflicted by haemophilia.$}
 {
-   #variable tmp_results {  @insert_affliction{HEMOPHILIA} }
+  #variable tmp_results {  @insert_affliction{HAEMOPHILIA} }
 }
+
 #ACTION {^hallucinating.$}
 {
-   #variable tmp_results {  @insert_affliction{HALLUCINATIONS} }
+  #variable tmp_results {  @insert_affliction{HALLUCINATIONS} }
 }
+
+#ACTION {^cursed with the healthleech.$}
+{
+  #variable tmp_results {  @insert_affliction{HEALTHLEECH} }
+}
+
+#ACTION {^paralysed on the left side.$}
+{
+  #variable tmp_results {  @insert_affliction{HEMIPLEGY LSIDE} }
+}
+
+#ACTION {^paralysed on the right side.$}
+{
+  #variable tmp_results {  @insert_affliction{HEMIPLEGY RSIDE} }
+}
+
+#ACTION {^paralysed on the lower body}.$}
+{
+  #variable tmp_results {  @insert_affliction{HEMIPLEGY LOWER} }
+}
+
+#ACTION {^marked with the aura of a heretic.$}
+{
+  #variable tmp_results {  @insert_affliction{HERETIC} }
+}
+
+#ACTION {^hypersomnic.$}
+{
+  #variable tmp_results {  @insert_affliction{HYPERSOMNIA} }
+}
+
+#ACTION {^bewitched by hypnotic patterns of lights.$}
+{
+  #variable tmp_results {  @insert_affliction{HYPNOTIC PATTERN} }
+}
+
+#ACTION {^a certified hypochondriac.$}
+{
+  #variable tmp_results {  @insert_affliction{HYPOCHONDRIA} }
+}
+
+#ACTION {^surrounded by a colourful light.$}
+{
+  #variable tmp_results {  @insert_affliction{ILLUMINATION} }
+}
+
+#ACTION {^impatient.$}
+{
+  #variable tmp_results {  @insert_affliction{IMPATIENCE} }
+}
+
+#ACTION {^marked with the aura of an infidel.$}
+{
+  #variable tmp_results {  @insert_affliction{INFIDEL} }
+}
+
+#ACTION {^an insomniac.$}
+{
+  #variable tmp_results {  @insert_affliction{INSOMNIA} }
+}
+
+#ACTION {^cursed with a powerful jinx.$}
+{
+  #variable tmp_results {  @insert_affliction{JINX} }
+}
+
+#ACTION {^surrounded by the aura of justice.$}
+{
+  #variable tmp_results {  @insert_affliction{JUSTICE} }
+}
+
+#ACTION {^suffering from a lacerated left arm.$}
+{
+  #variable tmp_results {  @insert_affliction{LACERATED LARM} }
+}
+
+#ACTION {^suffering from a lacerated right arm.$}
+{
+  #variable tmp_results {  @insert_affliction{LACERATED RARM} }
+}
+
+#ACTION {^suffering from a lacerated left leg.$}
+{
+  #variable tmp_results {  @insert_affliction{LACERATED LLEG} }
+}
+
+#ACTION {^suffering from a lacerated right leg.$}
+{
+  #variable tmp_results {  @insert_affliction{LACERATED RLEG} }
+}
+
+#ACTION {^left arm lashed in thorny vines.$}
+{
+  #variable tmp_results {  @insert_affliction{LASHED LARM} }
+}
+
+#ACTION {^right arm lashed in thorny vines.$}
+{
+  #variable tmp_results {  @insert_affliction{LASHED RARM} }
+}
+
+#ACTION {^left leg lashed in thorny vines.$}
+{
+  #variable tmp_results {  @insert_affliction{LASHED LLEG} }
+}
+
+#ACTION {^right leg lashed in thorny vines.$}
+{
+  #variable tmp_results {  @insert_affliction{LASHED RLEG} }
+}
+
+#ACTION {^feeling rather lethargic.$}
+{
+  #variable tmp_results {  @insert_affliction{LETHARGY} }
+}
+
+#ACTION {^suffering locked leg muscles.$}
+{
+  #variable tmp_results {  @insert_affliction{LOCKED LEGS} }
+}
+
+#ACTION {^suffering a locked throat.$}
+{
+  #variable tmp_results {  @insert_affliction{LOCKED THROAT} }
+}
+
+#ACTION {^very lonely.$}
+{
+  #variable tmp_results {  @insert_affliction{LONELINESS} }
+}
+
+#ACTION {^under the influence of a love potion.$}
+{
+  #variable tmp_results {  @insert_affliction{LOVE POTION} }
+}
+
+#ACTION {^Desperately in love with %1.$}
+{
+  #variable tmp_results {  @insert_affliction{LOVERS CURSE} }
+}
+
+#ACTION {^cursed by manabarbs.$}
+{
+  #variable tmp_results {  @insert_affliction{MANABARBS} }
+}
+
+#ACTION {^has a mangled left arm.$}
+{
+  #variable tmp_results {  @insert_affliction{MANGLED LARM} }
+}
+
+#ACTION {^has a mangled right arm.$}
+{
+  #variable tmp_results {  @insert_affliction{MANGLED RARM} }
+}
+
+#ACTION {^has a mangled left leg.$}
+{
+  #variable tmp_results {  @insert_affliction{MANGLED LLEG} }
+}
+
+#ACTION {^has a mangled right leg.$}
+{
+  #variable tmp_results {  @insert_affliction{MANGLED RLEG} }
+}
+
+#ACTION {^muted by a mangled tongue.$}
+{
+  #variable tmp_results {  @insert_affliction{MANGLED TONGUE} }
+}
+
+#ACTION {^masochistic.$}
+{
+  #variable tmp_results {  @insert_affliction{MASOCHISM} }
+}
+
+#ACTION {^covered in sticky mud.$}
+{
+  #variable tmp_results {  @insert_affliction{MUD} }
+}
+
+#ACTION {^narcoleptic.$}
+{
+  #variable tmp_results {  @insert_affliction{NARCOLEPSY} }
+}
+
+#ACTION {^under an ill omen.$}
+{
+  #variable tmp_results {  @insert_affliction{OMEN} }
+}
+
+#ACTION {^afraid of the world.$}
+{
+  #variable tmp_results {  @insert_affliction{OMNIPHOBIA} }
+}
+
 
 #CLASS diagnose CLOSE

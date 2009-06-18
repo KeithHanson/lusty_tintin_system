@@ -14,7 +14,8 @@
 	#if {$aff_tmp_idx == 0}
 	{
 		#list {afflictions} {ins} {1} {%0};
-		#variable tmp_results {@cure_next{$afflictions[1]}}
+		#variable tmp_results {@cure_next{$afflictions[1]}};
+		#variable tmp_results {@display_queue{ }}
 	}
 	{
 		#unvariable {aff_tmp_idx};
@@ -29,11 +30,27 @@
 	{
 		#list {afflictions} {del} {$aff_tmp_idx};
 		#variable tmp_results {@cure_next{$afflictions[1]}};
+		#variable tmp_results {@display_queue{ }}
 	}
 	{
 		#unvariable {aff_tmp_idx};
 		#VAR {result} {affliction removed}
 	}
+}
+
+#FUNCTION {display_queue}
+{
+   #VAR aff_queue {[<029>Cure Queue:<088>] };
+   #LIST {afflictions} {len} {tmp_aff_len};
+   #if {$tmp_aff_len == 0}
+   {
+      #VAR aff_queue {$aff_queue [<029>NO AFFLICTIONS<088>]}
+   }
+   {
+      #forall {$afflictions} {#VAR aff_queue {$aff_queue [&0]}}
+   }
+   
+   #SHOWME {$aff_queue} {-11}
 }
 
 #CLASS achromatic_aura read afflictions/achromatic_aura.tin

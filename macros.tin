@@ -2,12 +2,26 @@
 
 #MACRO {\eOl}
 {
-	d
+	#if {"$mode" == "normal"}
+	{
+		down
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {down}
+	};
 }
 
 #MACRO {\eOm}
 {
-	up
+	#if {"$mode" == "normal"}
+	{
+		up
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {up}
+	};
 }
 
 #MACRO {\eOn}
@@ -32,6 +46,10 @@
 	{
 		sw
 	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {sw}
+	};
 	#if {"$mode" == "parry"}
 	{
 		parry lleg 100
@@ -48,6 +66,10 @@
 	{
 		s
 	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {s}
+	};
 	#if {"$mode" == "parry"}
 	{
 		parry rleg 50;
@@ -60,6 +82,10 @@
 	#if {"$mode" == "normal"}
 	{
 		se
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {se}
 	};
 	#if {"$mode" == "parry"}
 	{
@@ -76,6 +102,10 @@
 	#if {"$mode" == "normal"}
 	{
 		w
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {w}
 	};
 	#if {"$mode" == "parry"}
 	{
@@ -110,6 +140,10 @@
 	{
 		e
 	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {e}
+	};
 	#if {"$mode" == "parry"}
 	{
 		parry rarm 100
@@ -125,6 +159,10 @@
 	#if {"$mode" == "normal"}
 	{
 		nw
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {nw}
 	}
 }
 
@@ -133,6 +171,10 @@
 	#if {"$mode" == "normal"}
 	{
 		n
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {n}
 	};
 	#if {"$mode" == "parry"}
 	{
@@ -149,6 +191,10 @@
 	#if {"$mode" == "normal"}
 	{
 		ne
+	};
+	#if {$mapping == 1}
+	{
+	   #LIST {current_path} {ins} {-1} {ne}
 	}
 }
 

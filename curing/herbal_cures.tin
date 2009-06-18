@@ -61,6 +61,13 @@
    {eat_kombu}
    {NONE}
    {NONE}
+   {eat_yarrow}
+   {eat_yarrow}
+   {eat_yarrow}
+   {eat_yarrow}
+   {eat_sparkleberry}
+   {eat_earwort}
+   {NONE}
 }
 
 #CLASS herbal_cures CLOSE

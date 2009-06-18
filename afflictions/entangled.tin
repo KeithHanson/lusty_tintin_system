@@ -22,4 +22,11 @@
 }
 {5}
 
+#SUBSTITUTE {A vampire squid entangles you with its fanged tentacles which tear into your flesh.}  { [<059>AFFLICTION:<088>] <029>ENTANGLED - WRITHE }  {5}
+#ACTION {A vampire squid entangles you with its fanged tentacles which tear into your flesh.}
+{
+   #variable tmp_results { @insert_affliction{ENTANGLED} }
+}
+{5}
+
 #CLASS entangled CLOSE

@@ -23,6 +23,13 @@
 }
 {5}
 
+#SUBSTITUTE {%*Your limbs suddenly lock up and cease to function.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
+#ACTION {%*Your limbs suddenly lock up and cease to function.}
+{
+   #variable tmp_results { @insert_affliction{PARAYLSIS} }
+}
+{5}
+
 #SUBSTITUTE {You are paralysed and cannot do that.}  { [<059>AFFLICTION:<088>] <039>PARAYLSIS - FOCUS BODY }  {5}
 #ACTION {You are paralysed and cannot do that.}
 {

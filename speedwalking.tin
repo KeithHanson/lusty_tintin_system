@@ -1,0 +1,124 @@
+#CLASS speedwalking OPEN
+
+#VAR {speedwalk} {0};
+#VAR {speed_walk_position} {1};
+#VAR {mapping} {0};
+#LIST {current_path} {clr};
+
+#alias {begin_path} 
+{
+   #VAR mapping 1;
+   #SHOWME {<039>[Mapping On]}
+};
+
+#alias {end_path} 
+{
+   #VAR mapping 0;
+   #SHOWME {<039>[Mapping Off]}
+};
+
+#alias save_current_path 
+{
+   #CLASS {paths} {OPEN};
+   #LIST {%1} {clr};
+   #FORALL {$current_path} {#LIST {%1} {ins} {-1} {&0}};
+   #CLASS {paths} {close};
+};
+
+#alias insert_move
+{
+   #LIST {current_path} {ins} {-1} {%0}
+};
+
+#alias load_path {#LIST current_path clr;#FORALL {$%1} {#LIST {current_path} {ins} {-1} {&0}}};
+
+#alias show_path
+{
+   #SHOWME $current_path
+};
+
+#ACTION {There is no exit in that direction.}
+{
+   #IF {$mapping == 1}
+   {
+      #LIST {current_path} {del} {-1}
+   };
+   #IF {$speedwalk == 1}
+   {
+      #VAR speedwalk 0;
+      #SHOWME {<019>[Speedwalk lost]}
+   }
+};
+
+#ACTION {Now now, don't be so hasty!}
+{
+   #IF {$mapping == 1}
+   {
+      #LIST {current_path} {del} {-1}
+   };
+   #IF {$speedwalk == 1}
+   {
+      #DELAY {0.5} {move_forward};
+   }
+};
+
+#ACTION {You must regain balance first.}
+{
+   #IF {$mapping == 1}
+   {
+      #LIST {current_path} {del} {-1}
+   };
+   #IF {$speedwalk == 1}
+   {
+      #DELAY {0.5} {move_forward};
+   }
+};
+
+#alias clear_current_path {#LIST {current_path} {clr} };
+
+#alias speedwalk
+{
+   #VAR {speed_walk_position} {1};
+   #VAR {speedwalk} {1};
+   #LIST {current_path} {len} {path_length};
+   move_forward;
+};
+
+#alias move_forward 
+{
+   $current_path[$speed_walk_position];
+}
+
+#ACTION {You see exits}
+{
+   #IF {$speedwalk == 1}
+   {
+      #IF {$speed_walk_position < $path_length}
+      {
+         #MATH {speed_walk_position} {$speed_walk_position + 1};
+         move_forward
+      }
+      {
+         #SHOWME {<039>[PATH END]};
+         #VAR {speedwalk} {0};
+      }
+   }
+}
+
+#ACTION {You see a single exit}
+{
+   #IF {$speedwalk == 1}
+   {
+      #IF {$speed_walk_position < $path_length}
+      {
+         #MATH {speed_walk_position} {$speed_walk_position + 1};
+         move_forward
+      }
+      {
+         #SHOWME {<039>[PATH END]};
+         #VAR {speedwalk} {0};
+      }
+   }
+}
+
+#CLASS speedwalking CLOSE

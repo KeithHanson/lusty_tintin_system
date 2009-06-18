@@ -61,6 +61,13 @@
    {NONE}
    {apply mending to arms}
    {apply mending to legs}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {NONE}
+   {apply regeneration to chest}
 }
 
 #CLASS apply_cures CLOSE

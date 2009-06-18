@@ -1,8 +1,8 @@
 #MACRO {\eOP}
 {
 	#session Lusternia lusternia.com 23;
-	USERNAME;
-	PASSWORD;
+	username;
+	password;
 	#CLASS macros read macros.tin;
    #CLASS substitutions read substitutions.tin;
    #CLASS combat_substitutions read combat_substitutions.tin;
@@ -12,6 +12,24 @@
    #CLASS afflictions read afflictions.tin;
    #CLASS defenses read defenses.tin;
    #CLASS curing read curing.tin;
+   #SHOWME { } {-1};
+   #SHOWME { } {-2};
+   #SHOWME { } {-3};
+   #SHOWME { } {-4};
+   #SHOWME { } {-5};
+   #SHOWME { } {-6};
+   #SHOWME { } {-7};
+   #SHOWME { } {-8};
+   #SHOWME { } {-9};
+   #SHOWME { } {-10};
+   #SHOWME { } {-11};
+   #SHOWME {[<019>TARGET:<088>] $target} {-10};
+   #variable tmp_results {@display_queue{ }};
+   #PATHDIR {in} {out} {64};
+   #PATHDIR {out} {in} {128};
+   
+   #CLASS speedwalking read speedwalking.tin;
+   #CLASS paths read paths.tin;
 }
 
-#SPLIT
+#SPLIT {12} {1}

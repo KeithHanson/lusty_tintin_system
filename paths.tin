@@ -1,0 +1,8 @@
+#CLASS {paths} OPEN
+
+#VARIABLE         {moors_to_cook}         {{e}{se}{se}{s}{se}{e}{e}{ne}{ne}{n}{se}{se}{e}{se}{s}{se}{s}{se}{e}{s}{se}{se}{e}{se}{se}{e}{se}{sw}{in}{e}{e}{down}{nw}{s}}
+#VARIABLE         {north_gate_to_shallach}  {{n}{nw}{nw}{nw}{n}{n}{nw}{nw}{n}{n}{n}{ne}{ne}{n}{n}{ne}{ne}{ne}{ne}{ne}{ne}{ne}{ne}{e}{ne}{nw}{nw}{n}{n}}
+#VARIABLE         {south_gate_to_stewartsville}  {{s}{sw}{sw}{sw}{w}{sw}{w}{sw}{sw}{nw}{nw}{nw}{w}{sw}{w}{sw}{w}{sw}{w}{w}{w}{w}{nw}{w}{w}{w}{sw}{w}{nw}{nw}{nw}{w}{w}{nw}{nw}{nw}{w}{nw}{w}{w}{w}{w}{nw}{nw}{w}{n}{n}{ne}{n}{nw}{w}{nw}{nw}{w}}
+#VARIABLE         {stewartsville_to_moors}  {{e}{se}{se}{e}{se}{s}{sw}{s}{s}{w}{sw}{w}{sw}{s}{s}{se}{sw}{s}{nw}{s}{sw}{sw}{w}{w}{nw}{n}{nw}{nw}{w}}
+
+#CLASS {paths} CLOSE

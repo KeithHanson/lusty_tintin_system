@@ -8,8 +8,8 @@
 }
 {5}
 
-#SUBSTITUTE {You are blind and see nothing but darkness.}  { [<059>AFFLICTION:<088>] <049>BLIND - EAT MYRTLE, FAELEAF, OR APPLY HEALTH TO HEAD }  {5}
-#ACTION {You are blind and see nothing but darkness.}
+#SUBSTITUTE {You are blind and can see nothing but darkness.}  { [<059>AFFLICTION:<088>] <049>BLIND - EAT MYRTLE, FAELEAF, OR APPLY HEALTH TO HEAD }  {5}
+#ACTION {You are blind and can see nothing but darkness.}
 {
    #variable tmp_results { @insert_affliction{BLIND} }
 }

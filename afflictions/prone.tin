@@ -9,8 +9,29 @@
 }
 {5}
 
+#SUBSTITUTE {%*a marine rockeater charges at you, knocking you off your feet.}  { [<059>AFFLICTION:<088>] <019>PRONE - STAND }  {5}
+#ACTION {%*a marine rockeater charges at you, knocking you off your feet.}
+{
+   #variable tmp_results { @insert_affliction{PRONE} }
+}
+{5}
+
 #SUBSTITUTE {You must first stand up before you can do that.}  { [<059>AFFLICTION:<088>] <019>PRONE - STAND }  {5}
 #ACTION {You must first stand up before you can do that.}
+{
+   #variable tmp_results { @insert_affliction{PRONE} }
+}
+{5}
+
+#SUBSTITUTE {%*elder knocks your legs out from under you with his staff%*}  { [<059>AFFLICTION:<088>] <019>PRONE - STAND }  {5}
+#ACTION {%*elder knocks your legs out from under you with his staff%*}
+{
+   #variable tmp_results { @insert_affliction{PRONE} }
+}
+{5}
+
+#SUBSTITUTE {%* a spectral paladin connects and knocks you sprawling to the ground.}  { [<059>AFFLICTION:<088>] <059>PRONE - STAND }  {5}
+#ACTION {%* a spectral paladin connects and knocks you sprawling to the ground.}
 {
    #variable tmp_results { @insert_affliction{PRONE} }
 }

@@ -8,8 +8,36 @@
 }
 {5}
 
+#SUBSTITUTE {You let out a massive belch into the air.}  { [<059>AFFLICTION:<088>] <059>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
+#ACTION {You let out a massive belch into the air.}
+{
+   #variable tmp_results { @insert_affliction{STUPIDITY} }
+}
+{5}
+
+#SUBSTITUTE {You fondle yourself absently.}  { [<059>AFFLICTION:<088>] <059>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
+#ACTION {You fondle yourself absently.}
+{
+   #variable tmp_results { @insert_affliction{STUPIDITY} }
+}
+{5}
+
 #SUBSTITUTE {You flip the bird.}  { [<059>AFFLICTION:<088>] <059>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
 #ACTION {You flip the bird.}
+{
+   #variable tmp_results { @insert_affliction{STUPIDITY} }
+}
+{5}
+
+#SUBSTITUTE {%*Your thoughts become muddled and a searing pain shoots through your mind.}  { [<059>AFFLICTION:<088>] <059>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
+#ACTION {Your thoughts become muddled and a searing pain shoots through your mind.}
+{
+   #variable tmp_results { @insert_affliction{STUPIDITY} }
+}
+{5}
+
+#SUBSTITUTE {You drop to one knee, demonstrating your humility and respect.}  { [<059>AFFLICTION:<088>] <059>STUPIDITY - EAT PENNYROYAL OR FOCUS MIND }  {5}
+#ACTION {You drop to one knee, demonstrating your humility and respect.}
 {
    #variable tmp_results { @insert_affliction{STUPIDITY} }
 }

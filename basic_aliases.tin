@@ -60,7 +60,8 @@
 {
 	#variable target %0;
 	#echo {TARGET SET TO: <019>%s<088>} {$target};
-	sqt Target set to: $target
+	sqt Target set to: $target;
+	#SHOWME {[<019>TARGET:<088>] $target} {-4}
 }
 
 #ALIAS {relaff} {#CLASS afflictions KILL;#CLASS afflictions READ afflictions.tin}
